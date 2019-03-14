@@ -1,0 +1,24 @@
+﻿<Properties StartupItem="Assembly-CSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SpaceInvaders\FinishGame.cs">
+    <Files>
+      <File FileName="Assets\Scripts\SpaceInvaders\StartWindow.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\PlayerMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\Database.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\Score.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\EnemyBulletCollider.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\EnemyColliders.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\AudioManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\EnemyMovement.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\EnemyIA.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\PlayerMovementShoot.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\SpaceInvaders\FinishGame.cs" Line="8" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\José Luis\Documents\Space Invaders 3D\Assets\Scripts\SpaceInvaders\Database.cs" line="18" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
