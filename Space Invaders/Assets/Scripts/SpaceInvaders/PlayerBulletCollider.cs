@@ -31,5 +31,9 @@ public class PlayerBulletCollider : MonoBehaviour
         {
             Destroy(gameObject);
         }
+        else if(col.gameObject.tag == "Bound")
+        {
+            Destroy(gameObject);
+        }
     }
 }

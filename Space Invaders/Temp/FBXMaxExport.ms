@@ -26,18 +26,18 @@ fn DialogCallback =
 pluginManager.loadClass FBXIMP;
 pluginManager.loadClass FBXEXP;
 
-openLog "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders C#/Temp/3dsMax.log" mode:"w"
+openLog "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders/Temp/3dsMax.log" mode:"w"
 print "Start of log file."; flushLog();
 while true do
 (	
-	if ( fileExists "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders C#/Temp/MaxCommandPipe" ) then
+	if ( fileExists "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders/Temp/MaxCommandPipe" ) then
 	(
 		exportNormals = false;
 		exportTangents = false;
 		bakeAnimations = false;
 		useFileUnits = false;
 	
-		waitpipe = (openFile "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders C#/Temp/MaxCommandPipe" mode:"r");
+		waitpipe = (openFile "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders/Temp/MaxCommandPipe" mode:"r");
 		filename = (readLine waitpipe);
 		fbxFilename = (readline waitpipe);
 		
@@ -154,7 +154,7 @@ while true do
 					print "After fbx export"; flushLog();
 				)
 
-				deleteFile "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders C#/Temp/MaxCommandPipe";
+				deleteFile "E:/GameDev/Proyectos/PDV-SpaceInvaders/PDV/Space Invaders/Temp/MaxCommandPipe";
 				print "Finished max loading and fbx conversion"; flushLog();
 			) -- with defaultAction
 		)
