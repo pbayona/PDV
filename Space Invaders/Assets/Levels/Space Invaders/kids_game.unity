@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &16692192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -191,7 +191,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &36597885
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -471,7 +471,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4196977678427700, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1897496776627784, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
       propertyPath: m_Name
@@ -749,7 +749,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &123934360
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -805,7 +805,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &124564963
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -927,7 +927,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &138436850
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -983,7 +983,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &151673540
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1237,7 +1237,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &194721799
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1293,7 +1293,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &199464925
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1623,7 +1623,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4196977678427700, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
@@ -1721,7 +1721,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &262617204
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2017,7 +2017,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4196977678427700, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 1897496776627784, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
       propertyPath: m_Name
@@ -2331,7 +2331,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &349669649
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2629,7 +2629,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &370526295
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2879,7 +2879,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &491660482
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2935,7 +2935,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &496397594
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3233,7 +3233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &507868687
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3266,6 +3266,29 @@ MonoBehaviour:
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: c3fe3c70068705b48a3281a5dedce418, type: 3}
   m_PrefabInternal: {fileID: 1898945250}
+--- !u!114 &521010228
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521010227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1677f70563e599e469ce9bc7cdd4df23, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &521010229
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 521010227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f74a0968845ef4a49910a1d2babf3513, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemy_bullet: {fileID: 0}
 --- !u!65 &521010230
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -3278,18 +3301,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 186.20486, y: 124.76915, z: 20.000002}
   m_Center: {x: -0.012325287, y: 61.722782, z: 10.000001}
---- !u!114 &521010231
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 521010227}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
 --- !u!54 &521010232
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3305,19 +3316,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!114 &521010233
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 521010227}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a751764c1b5aefb4b97cd63f78117607, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  enemy_bullet: {fileID: 1772154678458332, guid: 7602e372797d68c4fae4ef64d5f8a84c,
-    type: 2}
 --- !u!1001 &526540587
 Prefab:
   m_ObjectHideFlags: 0
@@ -3653,7 +3651,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &555325522
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3719,7 +3717,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4196977678427700, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
       propertyPath: m_RootOrder
-      value: 7
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1897496776627784, guid: 73705a1428999af478a30b8d2df065bc, type: 2}
       propertyPath: m_Name
@@ -4019,7 +4017,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &667961467
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4141,7 +4139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &700404325
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4439,7 +4437,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &734041496
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4737,7 +4735,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &741903494
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4793,7 +4791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &750530581
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4915,7 +4913,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &774431004
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4971,7 +4969,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &788085986
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5027,7 +5025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &789327939
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5083,7 +5081,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &801413042
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5222,7 +5220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &822957624
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5344,7 +5342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &836616669
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5400,7 +5398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &850247823
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5698,7 +5696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &863033369
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5820,7 +5818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &888602728
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5876,7 +5874,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &917096881
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -5998,7 +5996,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &974355838
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6054,7 +6052,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &974438845
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6176,7 +6174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1008171741
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6298,7 +6296,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1028197731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6420,7 +6418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1058988948
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6608,7 +6606,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1115591656
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6726,7 +6724,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1135972847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6782,7 +6780,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1141111192
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6899,9 +6897,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1144429848}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2ad13a811bb550240932efb29bdff389, type: 3}
+  m_Script: {fileID: 11500000, guid: 799e5fdc0f2fadd41830decb2e0df519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bullet: {fileID: 0}
 --- !u!1001 &1184485178
 Prefab:
   m_ObjectHideFlags: 0
@@ -6995,7 +6994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1233915013
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7051,7 +7050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1237504041
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7158,6 +7157,7 @@ GameObject:
   - component: {fileID: 1262398374}
   - component: {fileID: 1262398373}
   - component: {fileID: 1262398372}
+  - component: {fileID: 1262398377}
   m_Layer: 0
   m_Name: Camera
   m_TagString: Untagged
@@ -7235,6 +7235,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1262398377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1262398371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44647c1101fce5f429dafa1f632d1fff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  style: {fileID: 0}
 --- !u!1001 &1292933766
 Prefab:
   m_ObjectHideFlags: 0
@@ -7460,7 +7472,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1339010811
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7582,7 +7594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1347096396
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7638,7 +7650,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1348987838
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7694,7 +7706,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1372652661
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7750,7 +7762,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1403455593
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7872,7 +7884,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1452040052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8236,7 +8248,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1490010742
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8292,7 +8304,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1555298618
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8348,7 +8360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1564372920
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8646,7 +8658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1581706703
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8702,7 +8714,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1586025368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8839,13 +8851,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1674562482}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a88944c2a9937e4dac5a7537f47a2c4, type: 3}
+  m_Script: {fileID: 11500000, guid: 799e5fdc0f2fadd41830decb2e0df519, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  is_boss: 0
-  distance: 10
-  counter: 0
-  FRECUENCY: 0
+  bullet: {fileID: 0}
 --- !u!1001 &1690505167
 Prefab:
   m_ObjectHideFlags: 0
@@ -9177,7 +9186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1693080370
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9299,7 +9308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1730284689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9328,47 +9337,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy_bullet: {fileID: 1772154678458332, guid: 7602e372797d68c4fae4ef64d5f8a84c,
     type: 2}
---- !u!1 &1734674051
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1734674052}
-  - component: {fileID: 1734674054}
-  m_Layer: 0
-  m_Name: Database
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1734674052
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1734674051}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.016540527, y: 0.39013672, z: 10.996094}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1734674054
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1734674051}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 406beb8bac558164899d55baf04718e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  style: {fileID: 11400000, guid: 54b102d1f56f7714883ad6b005705ee5, type: 2}
 --- !u!1 &1739238900
 GameObject:
   m_ObjectHideFlags: 0
@@ -9918,7 +9886,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1821064720
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9974,7 +9942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1836610187
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10215,7 +10183,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1905589696
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10271,7 +10239,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1912431621
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10327,7 +10295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1918785260
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10515,7 +10483,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1959802826
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11032,7 +11000,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &1995548897
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11088,7 +11056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &2000382866
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11210,7 +11178,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &2103818513
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11332,7 +11300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &2125809330
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -11388,7 +11356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d30c25d3f2ab9f44be1385a7b1ae1fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMovement: {fileID: 1674562484}
+  enemyMovement: {fileID: 0}
 --- !u!54 &2138135306
 Rigidbody:
   m_ObjectHideFlags: 0
