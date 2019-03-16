@@ -687,7 +687,6 @@ GameObject:
   - component: {fileID: 32814094}
   - component: {fileID: 32814093}
   - component: {fileID: 32814097}
-  - component: {fileID: 32814096}
   m_Layer: 0
   m_Name: Audio
   m_TagString: Untagged
@@ -1028,20 +1027,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
---- !u!114 &32814096
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 32814090}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8cc80afe36aaacb4495a688ec48a7f2f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  killSource: {fileID: 32814091}
-  shootSource: {fileID: 32814091}
-  explosionSource: {fileID: 32814091}
 --- !u!114 &32814097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27743,10 +27728,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79ce64029744b24eb4eecaad5a0e859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  is_boss: 1
   distance: 10
   counter: 0
-  FRECUENCY: 0
+  frecuency: 0
+  is_boss: 1
 --- !u!4 &1184277467 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 12f3436db03c9c0448b8add08ece9309, type: 3}
@@ -39785,10 +39770,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e79ce64029744b24eb4eecaad5a0e859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  is_boss: 0
   distance: 10
   counter: 0
-  FRECUENCY: 0
+  frecuency: 0
+  is_boss: 0
 --- !u!1 &1675024067
 GameObject:
   m_ObjectHideFlags: 0
