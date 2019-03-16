@@ -3,18 +3,17 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Database : MonoBehaviour {
-
         public static float enemy_shotMinTime;
 		public static float enemy_shotMaxTime;
 		public static float enemy_horizontalMovementFrecuency = 40.0f;
         public static int chancesOfShooting;
 
-        public static int current_enemies = 65;
-        public static int max_enemies = 65;
+        public static float current_enemies = 65;
+        public static float max_enemies = 65;
 
         public static int current_score;
         public static int current_health;
-        public static string lastLoadedGame; //Evita tener que hacer 2 escenas distintas para el finished de kids game y normal game
+        public static string lastLoadedGame;                //Evita tener que hacer 2 escenas distintas para el finished de kids game y normal game
 
         public GUISkin style;
 
@@ -26,7 +25,7 @@ public class Database : MonoBehaviour {
             current_score = 0;
             current_enemies = 65;
             current_health = 1;
-            lastLoadedGame = Application.loadedLevelName; //En database almacenamos si se ha cargado la escena para niños o de mayores de 13 y luego en finish game pedimos el nombre
+            lastLoadedGame = Application.loadedLevelName;   //En database almacenamos si se ha cargado la escena para niños o de mayores de 13 y luego en finish game pedimos el nombre
 
             recalculateFrecuency();
             recalculateChances();
@@ -38,7 +37,7 @@ public class Database : MonoBehaviour {
             {
                 Application.LoadLevel("win_game");
             }
-            if (current_health == 0)
+            if (current_health <= 0)
             {
                 Application.LoadLevel("lose_game");
                 Destroy(GameObject.Find("Player"));
