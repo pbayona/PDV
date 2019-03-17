@@ -33,5 +33,12 @@ public class EnemyColliders : MonoBehaviour
                 Destroy(col.gameObject);
             }
         }
+        else if(gameObject.tag == "Boss")
+        {
+            if (col.gameObject.name == "Boss_Barrier")
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

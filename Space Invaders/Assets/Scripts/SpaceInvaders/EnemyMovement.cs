@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     //Movement variables
-    public static bool goLeft = false;    
+    public static bool goLeft = false;    //Static para que sea accesible desde el collider del enemigo
     public static bool goDown = false;
     public int distance = 10;
     public float counter = 0.0f;
