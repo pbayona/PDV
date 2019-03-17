@@ -5,8 +5,8 @@ using UnityEngine;
 public class EnemyMovement : MonoBehaviour
 {
     //Movement variables
-    public static bool goLeft = false;    //Static para que sea accesible desde el collider del enemigo
-    public static bool goDown = false;
+    public static bool goUp = false;    //Static para que sea accesible desde el collider del enemigo
+    public static bool goLeft = false;
     public int distance = 10;
     public float counter = 0.0f;
     public float frecuency;
@@ -21,7 +21,7 @@ public class EnemyMovement : MonoBehaviour
 	void Start ()
 	{
 		temp = transform.position;
-        goLeft = true;
+        goUp = true;
 	}
 
     void Update()
@@ -30,11 +30,11 @@ public class EnemyMovement : MonoBehaviour
 
         if (!is_boss)                                               //Si no es un jefe
         {
-            if (goLeft)                                             //Si va hacia la izquierda
+            if (goUp)                                             //Si va hacia la izquierda
             {
                 if (counter >= frecuency)                           //Cuando el contador llegue al valor de frecuency
                 {
-                    temp.x -= distance * Time.deltaTime;            //Se mueve a la izquierda
+                    temp.y += distance * Time.deltaTime;            //Se mueve a la izquierda
                     counter = 0.0f;                                 //Resetea el contador
                 }
                 else
@@ -46,7 +46,7 @@ public class EnemyMovement : MonoBehaviour
             {
                 if (counter >= frecuency)                           //Lo mismo pero pal otro lado
                 {
-                    temp.x += distance * Time.deltaTime;
+                    temp.y -= distance * Time.deltaTime;
                     counter = 0.0f;
                 }
                 else
@@ -55,15 +55,15 @@ public class EnemyMovement : MonoBehaviour
                 }
             }
 
-            if (goDown)                                             //Si se activa la señal goDown
+            if (goLeft)                                             //Si se activa la señal goDown
             {
-                temp.y -= distance * 2 * Time.deltaTime;            //Se baja una fila
-                goDown = false;                                     //Se resetea su valor
+                temp.x -= distance * 2 * Time.deltaTime;            //Se baja una fila
+                goLeft = false;                                     //Se resetea su valor
             }
         }
 
         else{                                                       //Si es un jefe
-            temp.x -= distance / 4 * Time.deltaTime;
+            temp.y -= distance / 4 * Time.deltaTime;
         }
 
         transform.position = temp;                                  //En cualquier caso, actualizar el valor de transform.position al nuevo calculado

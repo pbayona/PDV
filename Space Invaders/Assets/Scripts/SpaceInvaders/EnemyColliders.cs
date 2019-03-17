@@ -14,15 +14,20 @@ public class EnemyColliders : MonoBehaviour
 
         if (gameObject.tag != "Boss")
         {
-            if (col.gameObject.name == "Left_Barrier")
+            if (col.gameObject.name == "Top_Barrier")
             {
-                EnemyMovement.goLeft = false;
-                EnemyMovement.goDown = true;
-            }
-            else if (col.gameObject.name == "Right_Barrier")
-            {
+                Debug.Log("HOLA WEEEY");
+                EnemyMovement.goUp = false;
                 EnemyMovement.goLeft = true;
-                EnemyMovement.goDown = true;
+            }
+            else if (col.gameObject.name == "Bottom_Barrier")
+            {
+                EnemyMovement.goUp = true;
+                EnemyMovement.goLeft = true;
+            }
+            else if (col.gameObject.name == "Left_Barrier")
+            {
+                Debug.Log("Un marciano escapó!!!");
             }
             else if (col.gameObject.name == "Player")
             {
