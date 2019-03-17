@@ -1,0 +1,7 @@
+La rama de Game contiene la versión de Unity en la que el código está tanto en Javascript como en C#.
+La rama de Game-Javascript+C# contiene la versión de Unity en la que el código está en C#.
+
+No se ha realizado ningún cambio en Game, la única intención de realizar otra rama era conservar el proyecto con los scripts en Javascript.
+Si no he entendido mal como funciona GitHub, no habría hecho falta realizar la bifurcación.
+
+Lo único que no se como solucionarlo, creo que solo el propietario puede.
