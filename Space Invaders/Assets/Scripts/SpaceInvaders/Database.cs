@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Database : MonoBehaviour {
+        public List<User> users;
         public static float enemy_shotMinTime;
 		public static float enemy_shotMaxTime;
 		public static float enemy_horizontalMovementFrecuency = 40.0f;
@@ -19,6 +20,7 @@ public class Database : MonoBehaviour {
 
         void Start()
         {
+            users = new List<User>();
             enemy_shotMinTime = 20.0f;
             enemy_shotMaxTime = 50.0f;
 
@@ -80,4 +82,11 @@ public class Database : MonoBehaviour {
             GUI.Label(new Rect(10, 20, 200, 50), "SCORE < " + current_score.ToString() + " >");
             GUI.Label(new Rect(10, 700, 200, 50), "LIVES < " + current_health.ToString() + " >");
         }
-    }
+        public void addUser(User u)
+        {
+            users.Add(u);
+            Debug.Log("Se ha creado el usuario " + u.getName());
+        }
+}
+
+    

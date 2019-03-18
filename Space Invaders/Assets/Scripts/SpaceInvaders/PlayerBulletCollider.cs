@@ -23,6 +23,8 @@ public class PlayerBulletCollider : MonoBehaviour
         }
         else if (col.gameObject.tag == "Barrier")
         {
+            //aux.changeColor();
+            //ColorChanger.changeColor();
             Destroy(gameObject);
             Destroy(col.gameObject);
             //gameObject.GetComponent<>().material.color = Color.yellow;

@@ -20,16 +20,14 @@ public class FinishGame : MonoBehaviour
         if (points > 0)
         {
             GUI.Label(new Rect(40, 200, 500, 250), "Points < " + points.ToString() + " >", pStyle);
-            //Linea comentada que da fallo SOLO al ganar la partida, al perderla muestra los puntos sin problema
-            //pero al ganarla crashea
         }
 
-        if (GUI.Button(new Rect(50, 350, 370, 85), "RETRY", style))
+        if (GUI.Button(new Rect(40, 150, 195, 42), "RETRY", style))
         {
             //Reload
             Application.LoadLevel(Database.lastLoadedGame);
         }
-        if (GUI.Button(new Rect(50, 600, 670, 85), "QUIT GAME", style))
+        if (GUI.Button(new Rect(40, 250, 370, 42), "QUIT GAME", style))
         {
             //Reload
             Application.LoadLevel("start_window");

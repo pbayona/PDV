@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class EnemyColliders : MonoBehaviour
 {
-    //public EnemyMovement enemyMovement;
     void Start()
     {
 
