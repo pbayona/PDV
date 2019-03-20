@@ -15,7 +15,7 @@ public class EnemyColliders : MonoBehaviour
         {
             if (col.gameObject.name == "Top_Barrier")
             {
-                Debug.Log("HOLA WEEEY");
+                //Debug.Log("HOLA WEEEY");
                 EnemyMovement.goUp = false;
                 EnemyMovement.goLeft = true;
             }

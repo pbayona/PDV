@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyMovement : MonoBehaviour
-{
+{    
     //Movement variables
     public static bool goUp = false;    //Static para que sea accesible desde el collider del enemigo
     public static bool goLeft = false;

@@ -4,6 +4,21 @@ using UnityEngine;
 
 public class PlayerBulletCollider : MonoBehaviour
 {
+    private static GameObject player;
+    private bool friendlyFire;
+
+    private int bounces = 0;
+    private const int MAX_BOUNCES = 5;
+    private const int SPEED = 500;
+
+    void Start()
+    {
+        player = GameObject.FindWithTag("Player");
+        StartCoroutine(Counter(1));
+    }
+
+
+
     void OnTriggerEnter(Collider col)
     {
 
@@ -25,17 +40,64 @@ public class PlayerBulletCollider : MonoBehaviour
         {
             //aux.changeColor();
             //ColorChanger.changeColor();
+
+            
             Destroy(gameObject);
             Destroy(col.gameObject);
+            
+
             //gameObject.GetComponent<>().material.color = Color.yellow;
+        }
+        else if (col.gameObject.tag == "Bound")
+        {
+            bounces++;
+
+            if (bounces< MAX_BOUNCES)
+            {
+                Rigidbody bulletRig = GetComponent<Rigidbody>();
+
+                Vector3 bulletToPlayer = new Vector3 (Main_PlayerMovement.position.x - transform.position.x, 
+                    Main_PlayerMovement.position.y - transform.position.y, 0);
+                bulletToPlayer = Vector3.Normalize(bulletToPlayer);
+
+                bulletRig.velocity = Vector3.zero;
+
+                bulletRig.AddForce(bulletToPlayer * (SPEED + bounces * 50));
+                transform.LookAt(transform.position + bulletToPlayer);
+                transform.Rotate(90, 0, 0);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
+        else if (col.gameObject.name == "Player")
+        {
+            if (friendlyFire)
+            {
+                Database.hitPlayer();
+                Destroy(gameObject);
+            }
+        }
+        else if(col.gameObject.name == "Bullet(Clone)")
+        {
+            Destroy(gameObject);
+        }
+        else if(col.gameObject.name == "Enemy Bullet(Clone)")
+        {
+            Destroy(col.gameObject);
+            Destroy(gameObject);
         }
         else if (col.gameObject.name != "Player")
         {
             Destroy(gameObject);
+            Debug.Log("Colisión no contemplada con " + col.gameObject.name);
         }
-        else if(col.gameObject.tag == "Bound")
-        {
-            Destroy(gameObject);
-        }
+    }
+
+    IEnumerator Counter(int time)
+    {
+        yield return new WaitForSeconds(time);
+        friendlyFire = true;
     }
 }
