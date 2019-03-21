@@ -23,9 +23,11 @@ public class EnemyBulletCollider : MonoBehaviour
             Destroy(col.gameObject);
         }
         else if (col.gameObject.tag == "Barrier")
-        {
+        {	
+			
             Destroy(gameObject);
             Destroy(col.gameObject);
+			Database.collisions++;
         }
         else if (col.gameObject.tag == "Bound")
         {

@@ -1,37 +1,37 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ColorChanger : MonoBehaviour { /*Script asignado a cada alien, por lo que tiene el renderer de ese gameobject
     Un gameObject no tiene un material, sino un renderer, y puede que a ese renderer tenga un material asignado*/
-    /*
-    public static ColorChanger instance;
 
-    void awake()
-    {
-        instance = this;
-    }
-    */
-    public static Material [] materials;
-    public static Renderer rend;
-    static int i=0;
+    public Material [] materials;
+    public Renderer rend;
+	private int aux; //entero auxiliar para asegurarme de que cambie si o si de color al haber varias colisiones simultaneas
+	//Puede ocurrir que se vuelva a generar el mismo indice y por lo tanto no cambie de material.
+    private int i;
 
 	void Start () {
         rend = GetComponent<Renderer>(); //Pillo el renderer del gameObject       
         rend.enabled = true;
+		aux = Random.Range(0,4);
     }
 
-    public static void changeColor()
+    public void RandomChangeColor() //Como está asignado a cada alien por individual, el indice que se genera en cada alien es distinto
+	//y por tanto, el material que pillará cada uno será aleatorio 
     {
-        /*
-        ColorChanger.instance.i = Random.Range(0, 2);
-        ColorChanger.instance.rend.sharedMaterial = ColorChanger.instance.materials[ColorChanger.instance.i];
-        */
-        //*
-        i = Random.Range(0, 2);
-        rend.sharedMaterial = materials[i];
-        
-        //*/
+		do{
+			i = Random.Range (0,4);
+		}
+		while (i == aux); //Se saldrá del bucle cuando el material que vaya a poner sea distinto al último
+			rend.sharedMaterial = materials [i];
+			aux = i; //Aqui pilla aux el valor del ultimo indice generado
     }
+
+	public void ChangeColor(int j) //Método que asigna a todos los enemigos el mismo material
+	{
+		//Recibe como argumento el entero que se ha generado aleatoriamente para todos por igual
+		rend.sharedMaterial = materials[j];
+	}
+
 }

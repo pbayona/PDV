@@ -10,11 +10,14 @@ public class PlayerBulletCollider : MonoBehaviour
     private int bounces = 0;
     private const int MAX_BOUNCES = 5;
     private const int SPEED = 500;
+	private int aux;
+	 
 
-    void Start()
-    {
+	void Start()
+	{
         player = GameObject.FindWithTag("Player");
         StartCoroutine(Counter(1));
+		aux = 0;
     }
 
 
@@ -24,6 +27,7 @@ public class PlayerBulletCollider : MonoBehaviour
 
         if (col.gameObject.tag == "Enemy")
         {
+			Database.enemies.Remove (col.gameObject);
             AudioManager.PlayKill();
             Database.killedEnemy();
             Destroy(gameObject);
@@ -37,16 +41,10 @@ public class PlayerBulletCollider : MonoBehaviour
             Database.current_score += 150;
         }
         else if (col.gameObject.tag == "Barrier")
-        {
-            //aux.changeColor();
-            //ColorChanger.changeColor();
-
-            
+        {				
             Destroy(gameObject);
             Destroy(col.gameObject);
-            
-
-            //gameObject.GetComponent<>().material.color = Color.yellow;
+			Database.collisions++;	
         }
         else if (col.gameObject.tag == "Bound")
         {

@@ -63,10 +63,10 @@
      <Compile Include="Assets\Scripts\SpaceInvaders\InputController.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\Kids_PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\Main_PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\SpaceInvaders\Player.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\PlayerBulletCollider.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\Score.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\StartWindow.cs" />
-     <Compile Include="Assets\Scripts\SpaceInvaders\User.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Program Files/Unity 2017/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

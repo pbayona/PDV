@@ -5,8 +5,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 
 public static class BinarySaveLoad{ //Script con 2 métodos, el primero permite guardar una lista de usuarios recibida como argumento
 	//El segundo método deserializa el archivo binario escrito y lo recupera a lista de usuarios
-
-	public static void SaveUsers(List<User> users)
+	/*
+	public static void SaveUsers()
 	{
 		BinaryFormatter formatter = new BinaryFormatter ();
 		string path = Application.persistentDataPath + "/users";
@@ -30,5 +30,6 @@ public static class BinarySaveLoad{ //Script con 2 métodos, el primero permite 
 			return null;
 		}	
 	}
+	*/
 
 }

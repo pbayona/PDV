@@ -115,6 +115,7 @@ ModelImporter:
     2300066: Box034
     2300068: Box035
     2300070: Box036
+    2300072: //RootNode
     3300000: Box001
     3300002: Box002
     3300004: Box003
@@ -151,6 +152,7 @@ ModelImporter:
     3300066: Box034
     3300068: Box035
     3300070: Box036
+    3300072: //RootNode
     4300000: Box001
     4300002: Box002
     4300004: Box003
@@ -187,6 +189,7 @@ ModelImporter:
     4300066: Box034
     4300068: Box035
     4300070: Box036
+    4300072: Alien3
     9500000: //RootNode
   materials:
     importMaterials: 1

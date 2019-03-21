@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class Database : MonoBehaviour {
-        public List<User> users;
         public static float enemy_shotMinTime;
 		public static float enemy_shotMaxTime;
 		public static float enemy_horizontalMovementFrecuency = 40.0f;
@@ -14,16 +13,28 @@ public class Database : MonoBehaviour {
 
         public static int current_score;
         public static int current_health;
-        public static string lastLoadedGame;                //Evita tener que hacer 2 escenas distintas para el finished de kids game y normal game
+        public static string lastLoadedGame; //Evita tener que hacer 2 escenas distintas para el finished de kids game y normal game
 
         public GUISkin style;
+		public static int collisions;
+		private GameObject[] aliens;
+		public static List<GameObject> enemies;
+		private bool multiple; //Colision multiple en barreras o no
+		private int aux; //Almacenar el ultimo material cambiado
 
-        void Start()
-        {
-            users = new List<User>();
+		void Start()
+		{
+			enemies = new List<GameObject> ();
+			aliens = GameObject.FindGameObjectsWithTag("Enemy");
+			for (int i = 0; i < aliens.Length; i++)
+			{
+				enemies.Add (aliens [i]);
+			}
             enemy_shotMinTime = 20.0f;
             enemy_shotMaxTime = 50.0f;
-
+			multiple = false;
+			
+			collisions = 0;
             current_score = 0;
             current_enemies = 65;
             current_health = 1;
@@ -31,6 +42,7 @@ public class Database : MonoBehaviour {
 
             recalculateFrecuency();
             recalculateChances();
+			StartCoroutine(Counter(0.1f));
         }
 
         void Update()
@@ -43,7 +55,6 @@ public class Database : MonoBehaviour {
             {
                 Application.LoadLevel("lose_game");
                 Destroy(GameObject.Find("Player"));
-                //current_health = -1;
             }
         }
 
@@ -82,11 +93,40 @@ public class Database : MonoBehaviour {
             GUI.Label(new Rect(10, 20, 200, 50), "SCORE < " + current_score.ToString() + " >");
             GUI.Label(new Rect(10, 700, 200, 50), "LIVES < " + current_health.ToString() + " >");
         }
-        public void addUser(User u)
-        {
-            users.Add(u);
-            Debug.Log("Se ha creado el usuario " + u.getName());
-        }
+
+		private void CollisionCounter()
+		{
+			int j;
+			if (!multiple) {
+				do{
+					j = Random.Range(0, 4); //Generamos una entero aleatorio que se encarga de aplicar a todos los aliens el mismo material
+				}while(j == aux);				
+				foreach (GameObject enemy in enemies) {
+					enemy.SendMessage ("ChangeColor",j);
+				}
+				aux = j;
+			} else {
+				foreach (GameObject enemy in enemies) {
+					enemy.SendMessage ("RandomChangeColor");
+				}
+			}
+		}
+
+		IEnumerator Counter(float time)
+		{
+			while (current_health > 0) {
+				yield return new WaitForSecondsRealtime (time);
+				if (collisions > 1) {
+					multiple = true;
+					CollisionCounter ();
+				} else if(collisions == 1){
+					multiple = false;
+					CollisionCounter ();
+				}				
+				collisions = 0;
+				
+			}
+		}
 }
 
     
