@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Levels/Space Invaders/start_window.unity
+- path: Assets/Niveles/start_window.unity
   isLoaded: 1
   isActive: 1
