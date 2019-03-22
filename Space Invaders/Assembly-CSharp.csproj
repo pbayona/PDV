@@ -62,9 +62,11 @@
      <Compile Include="Assets\Scripts\SpaceInvaders\FinishGame.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\InputController.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\Kids_PlayerMovement.cs" />
+     <Compile Include="Assets\Scripts\SpaceInvaders\Leaderboard.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\Main_PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\Player.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\PlayerBulletCollider.cs" />
+     <Compile Include="Assets\Scripts\SpaceInvaders\PlayerData.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\Score.cs" />
      <Compile Include="Assets\Scripts\SpaceInvaders\StartWindow.cs" />
  <Reference Include="UnityEngine.UI">

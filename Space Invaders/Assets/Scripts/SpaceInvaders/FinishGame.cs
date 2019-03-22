@@ -19,18 +19,23 @@ public class FinishGame : MonoBehaviour
 
         if (points > 0)
         {
-            GUI.Label(new Rect(40, 200, 500, 250), "Points < " + points.ToString() + " >", pStyle);
+            GUI.Label(new Rect(40, 150, 500, 250), "Points < " + points.ToString() + " >", pStyle);
         }
 
-        if (GUI.Button(new Rect(40, 150, 195, 42), "RETRY", style))
+        if (GUI.Button(new Rect(40, 100, 195, 42), "RETRY", style))
         {
             //Reload
             Application.LoadLevel(Database.lastLoadedGame);
         }
-        if (GUI.Button(new Rect(40, 250, 370, 42), "QUIT GAME", style))
+        if (GUI.Button(new Rect(40, 200, 370, 42), "QUIT GAME", style))
         {
             //Reload
             Application.LoadLevel("start_window");
         }
+		if (GUI.Button(new Rect(40, 300, 370, 42), "Ranking", style))
+		{
+			//Reload
+			Application.LoadLevel("user_input");
+		}
     }
 }

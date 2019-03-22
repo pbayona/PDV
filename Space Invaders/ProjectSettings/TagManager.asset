@@ -8,6 +8,7 @@ TagManager:
   - Barrier
   - Boss
   - Bound
+  - Texto
   layers:
   - Default
   - TransparentFX
