@@ -10,7 +10,8 @@ public class InputController : MonoBehaviour {
 
 	public void GetInput(string input)
     {     
-		if (Leaderboard.addPlayer (new Player (Leaderboard.current_players.ToString (), Database.current_score))) {
+		Player aux = new Player (Leaderboard.current_players.ToString (), Database.current_score);
+		if (Leaderboard.addPlayer (aux)) {
 			print ("Se ha creado un jugador y se ha añadido al ranking");
 		} else {
 			print ("El jugador no se ha añadido al ranking");

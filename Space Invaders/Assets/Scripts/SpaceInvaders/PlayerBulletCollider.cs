@@ -41,10 +41,16 @@ public class PlayerBulletCollider : MonoBehaviour
             Database.current_score += 150;
         }
         else if (col.gameObject.tag == "Barrier")
-        {				
+        {		
+			Database.collisions++;	
+			if (Database.collisions == 1) {
+				GameObject camera = GameObject.FindGameObjectWithTag ("MainCamera");
+				//Database.call ();
+				camera.SendMessage ("call");
+			}
             Destroy(gameObject);
             Destroy(col.gameObject);
-			Database.collisions++;	
+
         }
         else if (col.gameObject.tag == "Bound")
         {

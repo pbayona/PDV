@@ -19,8 +19,8 @@ public class Database : MonoBehaviour {
 		public static int collisions;
 		private GameObject[] aliens;
 		public static List<GameObject> enemies;
-		private bool multiple; //Colision multiple en barreras o no
-		private int aux; //Almacenar el ultimo material cambiado
+		private static bool multiple; //Colision multiple en barreras o no
+		private static int aux; //Almacenar el ultimo material cambiado
 
 		void Start()
 		{
@@ -42,7 +42,7 @@ public class Database : MonoBehaviour {
 
             recalculateFrecuency();
             recalculateChances();
-			StartCoroutine(Counter(0.1f));
+			//StartCoroutine(Counter(0.1f));
         }
 
         void Update()
@@ -94,7 +94,7 @@ public class Database : MonoBehaviour {
             GUI.Label(new Rect(10, 700, 200, 50), "LIVES < " + current_health.ToString() + " >");
         }
 
-		private void CollisionCounter()
+		private void CollisionColor()
 		{
 			int j;
 			if (!multiple) {
@@ -112,20 +112,24 @@ public class Database : MonoBehaviour {
 			}
 		}
 
-		IEnumerator Counter(float time)
+		public IEnumerator CollisionCounter(float time)
 		{
-			while (current_health > 0) {
 				yield return new WaitForSecondsRealtime (time);
 				if (collisions > 1) {
 					multiple = true;
-					CollisionCounter ();
+					CollisionColor ();
+					Debug.Log ("multiple: " + collisions);
 				} else if(collisions == 1){
 					multiple = false;
-					CollisionCounter ();
+					CollisionColor ();
+					Debug.Log ("single: " + collisions);
 				}				
 				collisions = 0;
-				
-			}
+				Debug.Log ("Restart: " + collisions);
+		}
+
+		public void call(){
+			StartCoroutine (CollisionCounter (0.1f));
 		}
 }
 
