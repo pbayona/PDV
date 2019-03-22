@@ -13,8 +13,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PixelRect:
     serializedVersion: 2
-    x: 0
-    y: 43
+    x: 8
+    y: 51
     width: 1280
     height: 637
   m_ShowMode: 4
@@ -110,7 +110,7 @@ MonoBehaviour:
   m_MinSize: {x: 613, y: 492}
   m_MaxSize: {x: 18008, y: 14042}
   vertical: 0
-  controlID: 66
+  controlID: 58
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -134,7 +134,7 @@ MonoBehaviour:
   m_MinSize: {x: 102, y: 242}
   m_MaxSize: {x: 4002, y: 8042}
   vertical: 1
-  controlID: 67
+  controlID: 110
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -209,7 +209,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 492}
   m_MaxSize: {x: 10004, y: 14042}
   vertical: 1
-  controlID: 42
+  controlID: 59
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -383,8 +383,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 92
+    x: 8
+    y: 100
     width: 767
     height: 401
   m_SceneLighting: 1
@@ -420,7 +420,7 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.0044995835, y: 0.006602019, z: 0.00004647413, w: 0.9999681}
     speed: 2
-    m_Value: {x: -0.0044995835, y: 0.006602019, z: 0.00004647413, w: 0.9999681}
+    m_Value: {x: 0.0044995835, y: -0.006602019, z: -0.00004647413, w: -0.9999681}
   m_Size:
     m_Target: 10.736283
     speed: 2
@@ -457,8 +457,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 0
-    y: 514
+    x: 8
+    y: 522
     width: 767
     height: 144
 --- !u!114 &16
@@ -483,34 +483,34 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 771
-    y: 92
+    x: 779
+    y: 100
     width: 230
     height: 291
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 10fbfeff30fcfeff36fcfeff2cc4ffff1afcffff000000000c59000024590000325900006a5b0000
+    m_ExpandedIDs: 8cf7ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Canvas
-      m_OriginalName: Canvas
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 22834
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
   m_ExpandedScenes:
-  - main_game
+  - start_window
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -536,8 +536,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 771
-    y: 404
+    x: 779
+    y: 412
     width: 230
     height: 254
   m_SearchFilter:
@@ -551,19 +551,18 @@ MonoBehaviour:
     m_ScenePaths: []
     m_ShowAllHits: 0
     m_SearchArea: 0
-    m_Folders:
-    - Assets/Levels/Space Invaders
+    m_Folders: []
   m_ViewMode: 0
   m_StartGridSize: 16
   m_LastFolders: []
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: "C:\\Users\\Jos\xE9 Luis\\Documents\\GitHub\\PDV\\Space Invaders"
+  m_LastProjectPath: C:\Users\jjust\Desktop\GameDev\GitHub\PDV\Space Invaders
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: b6280000
     m_LastClickedID: 10422
-    m_ExpandedIDs: 0000000086260000942600007827000086270000882700008a2700009e270000a827000098280000a6280000a8280000ac28000044290000783200007a3200007c3200007e32000080320000823200008432000086320000883200008a3200008c320000
+    m_ExpandedIDs: 0000000074280000822800008e280000562900006429000066290000682900007c29000086290000762a0000782a00007a2a0000122b0000662b0000682b00006a2b00006c2b00006e2b0000702b0000722b0000742b0000762b0000782b00007a2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -591,7 +590,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 136}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000086260000942600007827000086270000882700008a2700009e270000a827000098280000a6280000a8280000ac28000044290000783200007a3200007c3200007e32000080320000823200008432000086320000883200008a3200008c320000
+    m_ExpandedIDs: 0000000074280000822800008e280000562900006429000066290000682900007c29000086290000762a0000782a00007a2a0000122b0000662b0000682b00006a2b00006c2b00006e2b0000702b0000722b0000742b0000762b0000782b00007a2b0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,8 +667,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 1005
-    y: 92
+    x: 1013
+    y: 100
     width: 275
     height: 566
   m_ScrollPosition: {x: 0, y: 0}
