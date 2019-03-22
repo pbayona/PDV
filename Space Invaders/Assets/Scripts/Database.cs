@@ -118,14 +118,14 @@ public class Database : MonoBehaviour {
 				if (collisions > 1) {
 					multiple = true;
 					CollisionColor ();
-					Debug.Log ("multiple: " + collisions);
+					//Debug.Log ("multiple: " + collisions);
 				} else if(collisions == 1){
 					multiple = false;
 					CollisionColor ();
-					Debug.Log ("single: " + collisions);
+					//Debug.Log ("single: " + collisions);
 				}				
 				collisions = 0;
-				Debug.Log ("Restart: " + collisions);
+				//Debug.Log ("Restart: " + collisions);
 		}
 
 		public void call(){

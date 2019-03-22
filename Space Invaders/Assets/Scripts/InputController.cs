@@ -10,18 +10,19 @@ public class InputController : MonoBehaviour {
 
 	public void GetInput(string input)
     {     
-		Player aux = new Player (Leaderboard.current_players.ToString (), Database.current_score);
+		Application.LoadLevel("leaderboard");
+		Player aux = new Player (input, Database.current_score);
+		Leaderboard.instantiateList ();
 		if (Leaderboard.addPlayer (aux)) {
-			print ("Se ha creado un jugador y se ha añadido al ranking");
+			Debug.Log("Se ha creado un jugador y se ha añadido al ranking");
 		} else {
-			print ("El jugador no se ha añadido al ranking");
+			Debug.Log("El jugador no se ha añadido al ranking");
 		}
 		//Cargar escena clasificacion
-		Application.LoadLevel("leaderboard");
     }
-    /*
+    
 	public void Clear(){
 		entrada.text = "";
 	}
-	*/
+
 }
