@@ -7,6 +7,7 @@ public class Database : MonoBehaviour {
 		public static float enemy_shotMaxTime;
 		public static float enemy_horizontalMovementFrecuency = 40.0f;
         public static int chancesOfShooting;
+		public Camera myCamera;
 
         public static float current_enemies = 65;
         public static float max_enemies = 65;
@@ -54,8 +55,13 @@ public class Database : MonoBehaviour {
             }
             if (current_health <= 0) 
             {	
+				
+				int [] array = new int[2];
+				array[0] = Screen.width;
+				array[1] = Screen.height;
+				myCamera.SendMessage ("takeScreenshot",array);
+				auxCounter (0.3f); //Este pequeño delay en cambiar de escena es para que renderice el jugador y la bala ya que son destruidas
 				Application.LoadLevel ("user_input");
-                //Application.LoadLevel("lose_game");
                 Destroy(GameObject.Find("Player"));
             }
 
@@ -129,6 +135,11 @@ public class Database : MonoBehaviour {
 				}				
 				collisions = 0;
 				//Debug.Log ("Restart: " + collisions);
+		}
+
+		IEnumerator auxCounter(float time)
+		{
+			yield return new WaitForSecondsRealtime (time);
 		}
 
 		public void call(){
