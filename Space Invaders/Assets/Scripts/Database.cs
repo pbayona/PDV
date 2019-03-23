@@ -30,6 +30,7 @@ public class Database : MonoBehaviour {
 			{
 				enemies.Add (aliens [i]);
 			}
+			aliens = null;
             enemy_shotMinTime = 20.0f;
             enemy_shotMaxTime = 50.0f;
 			multiple = false;
@@ -42,20 +43,22 @@ public class Database : MonoBehaviour {
 
             recalculateFrecuency();
             recalculateChances();
-			//StartCoroutine(Counter(0.1f));
         }
 
         void Update()
         {
-            if (current_enemies == 0)
+            if (current_enemies == 0) //esto está deprecated jajaja xd
             {
                 Application.LoadLevel("win_game");
+				//Captura de pantalla
             }
-            if (current_health <= 0)
-            {
-                Application.LoadLevel("lose_game");
+            if (current_health <= 0) 
+            {	
+				Application.LoadLevel ("user_input");
+                //Application.LoadLevel("lose_game");
                 Destroy(GameObject.Find("Player"));
             }
+
         }
 
         //Modifiers

@@ -1,8 +1,31 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+//KEYS para nombres - {0,1,2,3,4,5,6,7,8,9}
+//KEYS para scores - {score0, score1, score2, score3, score4, score5, score6, score7, score8, score9}
 
+/* El esquema que se sigue cuando se entra al ranking es el siguiente
+ * 
+1 - Creamos una lista de usuarios y la rellenamos con usuarios nuevos a partir de los names y scores almacenados en PlayerPrefs.
+
+  1.1 - Solo se almacenan hasta 10 usuarios.
+	
+2 - Una vez la lista está creada, sea el tamaño que sea, (max 10) se ORDENA.
+
+3 - Luego recibimos el jugador nuevo que intenta entrar en el ranking en AddPlayer(Player p).
+
+  3.1 - Si current_players (almacenada en playerPrefs y restaurada al hacer load() ) es menor a 10, entonces se mete directamente a la
+  		lista y se incrementa current_players.
+  3.2 - Si current_players es igual a 10 (el maximo) entonces hay que comparar la puntuacion del ultimo de la lista (ya que siempre
+  		está ordenada) con la del jugador que quiere entrar. Si la puntuacion entrante es mayor a la del último en el ranking,
+  		entonces se borrará al último y se meterá al nuevo
+  		
+4 - SE ORDENA LA LISTA Y SE GUARDA (almacenar en disco)
+
+5 - Como último paso se ejecuta el OnGUI que recorrerá la lista de players y la muestra en pantalla 
+*/
 public class Leaderboard : MonoBehaviour
+
 {
 	public const int MAX_PLAYERS = 10;
 	public static int current_players = 0;
@@ -10,6 +33,7 @@ public class Leaderboard : MonoBehaviour
 	public static List<Player> players;
 	public GUIStyle pStyle;
 	public GUIStyle labStyle;
+	public GUIStyle style;
 		
 	static void sort()
 	{
@@ -20,7 +44,7 @@ public class Leaderboard : MonoBehaviour
 		return p2.getScore ().CompareTo (p1.getScore());
 	}
 
-	static void save(){
+	static void save(){ //Recorre la lista de usuarios y los guarda
 		int i = 0;
 		foreach (Player player in players) {
 			PlayerPrefs.SetInt ("Score"+i.ToString(),player.getScore());
@@ -43,19 +67,18 @@ public class Leaderboard : MonoBehaviour
 
 	public static bool addPlayer(Player p)
 	{		
-		print (current_players);
 		if (current_players < 10) { //Si hay menos de 10 players, se mete directamente
 			players.Add (p);
+			current_players++;
 			sort ();
 			save ();
-			current_players++;
 			return true;
 		} else if (current_players == 10){
 			/* Hay que ver si puede entrar en el ranking por su puntuacion, si es así habrá que
 			borrar el de puntuacion mas baja y meter a este	*/
 			if (p.getScore () > getLowerScore()) {
-				print ("Score de entrada: " + p.getScore ());
-				print ("Score mas bajo en la lista: " + getLowerScore ());
+				//print ("Score de entrada: " + p.getScore ());
+				//print ("Score mas bajo en la lista: " + getLowerScore ());
 				players.RemoveAt (9); 
 				players.Add (p);
 				sort ();
@@ -66,15 +89,25 @@ public class Leaderboard : MonoBehaviour
 		return false;
 	}
 
-	void OnGUI()
+	void OnGUI() //Metodo que contiene todo lo que se ve en pantalla
 	{
 		GUI.Label(new Rect(20, 20, 1000, 500), "RANKING", labStyle);
 		int incremento = 0;
-		foreach (Player player in players) {
+		foreach (Player player in players) { //Mostrar el ranking, recorre la lista de players (Siempre está ordenada por sort())
 			GUI.Label(new Rect(40, (100 + incremento), 400, 200),"Name < " + player.getName() + " > " + "-----" + " Points < " + player.getScore().ToString() + " >", pStyle);
 			incremento += 25;
 		}
+		if (GUI.Button(new Rect(130, 450, 195, 42), "RETRY", style))
+		{
+			//Reload
+			//Application.LoadLevel(Database.lastLoadedGame);
+			Application.LoadLevel("main_game");
 
+		}
+		if (GUI.Button(new Rect(500, 450, 370, 42), "QUIT GAME", style))
+		{
+			Application.LoadLevel("start_window");
+		}
 	}
 
 	public static void instantiateList()
@@ -97,7 +130,7 @@ public class Leaderboard : MonoBehaviour
 		return -1;
 	}
 
-	private void deleteAllPlayerPrefs() //Este metodo borra todo lo que tenemos guardado en disco, nunca lo llamo lol pero ahi lo dejo
+	private static void deleteAllPlayerPrefs() //Este metodo borra todo lo que tenemos guardado en PlayerPrefs, nunca lo llamo lol pero ahi lo dejo xd
 	{
 		PlayerPrefs.DeleteAll ();
 	}
