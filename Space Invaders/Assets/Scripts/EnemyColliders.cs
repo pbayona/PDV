@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class EnemyColliders : MonoBehaviour
 {
-    void Start()
-    {
-
-    }
     void OnTriggerEnter(Collider col)
     {
 
@@ -39,10 +35,17 @@ public class EnemyColliders : MonoBehaviour
         }
         else if(gameObject.tag == "Boss")
         {
-            if (col.gameObject.name == "Boss_Barrier")
-            {
+            if (col.gameObject.name == "Bottom_Barrier")
+            {	
+				Debug.Log ("El boss ha muerto");
+				GameObject camera = GameObject.FindGameObjectWithTag ("MainCamera"); /*Pillo la camara ya que necesito llamar a un metodo
+				de database y por estáticos peta */ 
+				camera.SendMessage ("callRespawn");
                 Destroy(gameObject);
             }
         }
+
+
     }
+
 }

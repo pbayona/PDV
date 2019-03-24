@@ -8,6 +8,7 @@ public class Database : MonoBehaviour {
 		public static float enemy_horizontalMovementFrecuency = 40.0f;
         public static int chancesOfShooting;
 		public Camera myCamera;
+		public GameObject boss;
 
         public static float current_enemies = 65;
         public static float max_enemies = 65;
@@ -22,6 +23,7 @@ public class Database : MonoBehaviour {
 		public static List<GameObject> enemies;
 		private static bool multiple; //Colision multiple en barreras o no
 		private static int aux; //Almacenar el ultimo material cambiado
+		public Vector3 respawn;
 
 		void Start()
 		{
@@ -35,6 +37,9 @@ public class Database : MonoBehaviour {
             enemy_shotMinTime = 20.0f;
             enemy_shotMaxTime = 50.0f;
 			multiple = false;
+			respawn.x = 12.3f;
+			respawn.y = 9.49f;
+			respawn.z = 8.8f;
 			
 			collisions = 0;
             current_score = 0;
@@ -142,8 +147,19 @@ public class Database : MonoBehaviour {
 			yield return new WaitForSecondsRealtime (time);
 		}
 
-		public void call(){
+		public void call(){ //LLamado para llamar al contador de colisiones
 			StartCoroutine (CollisionCounter (0.1f));
+		}
+
+		public void callRespawn() //Llama al contador de respawn del boss
+		{
+			StartCoroutine (bossRespawn (10));
+		}
+
+		IEnumerator bossRespawn(int time)
+		{
+			yield return new WaitForSecondsRealtime (time);
+			Instantiate (boss, respawn, Quaternion.Euler (0, 0, 90));
 		}
 }
 

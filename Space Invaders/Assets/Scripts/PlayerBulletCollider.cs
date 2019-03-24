@@ -35,10 +35,14 @@ public class PlayerBulletCollider : MonoBehaviour
         }
         else if (col.gameObject.tag == "Boss")
         {
+			GameObject camera = GameObject.FindGameObjectWithTag ("MainCamera"); /*Pillo la camara ya que necesito llamar a un metodo
+				de database y por estáticos peta*/
+			camera.SendMessage ("callRespawn");
             AudioManager.PlayKill();
             Destroy(gameObject);
             Destroy(col.gameObject);
             Database.current_score += 150;
+
         }
         else if (col.gameObject.tag == "Barrier")
         {		

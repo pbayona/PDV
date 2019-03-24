@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Niveles/user_input.unity
+- path: Assets/Niveles/main_game.unity
   isLoaded: 1
   isActive: 1
