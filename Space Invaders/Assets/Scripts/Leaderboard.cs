@@ -32,8 +32,6 @@ public class Leaderboard : MonoBehaviour
 	public static int highest_score;
 	public static List<Player> players;
 	public GUIStyle pStyle;
-	public GUIStyle labStyle;
-	public GUIStyle style;
 		
 	static void sort()
 	{
@@ -91,22 +89,10 @@ public class Leaderboard : MonoBehaviour
 
 	void OnGUI() //Metodo que contiene todo lo que se ve en pantalla
 	{
-		GUI.Label(new Rect(20, 20, 1000, 500), "RANKING", labStyle);
 		int incremento = 0;
 		foreach (Player player in players) { //Mostrar el ranking, recorre la lista de players (Siempre está ordenada por sort())
 			GUI.Label(new Rect(40, (100 + incremento), 400, 200),"Name < " + player.getName() + " > " + "-----" + " Points < " + player.getScore().ToString() + " >", pStyle);
 			incremento += 25;
-		}
-		if (GUI.Button(new Rect(130, 450, 195, 42), "RETRY", style))
-		{
-			//Reload
-			//Application.LoadLevel(Database.lastLoadedGame);
-			Application.LoadLevel("main_game");
-
-		}
-		if (GUI.Button(new Rect(500, 450, 370, 42), "QUIT GAME", style))
-		{
-			Application.LoadLevel("start_window");
 		}
 	}
 
@@ -133,6 +119,16 @@ public class Leaderboard : MonoBehaviour
 	private static void deleteAllPlayerPrefs() //Este metodo borra todo lo que tenemos guardado en PlayerPrefs, nunca lo llamo lol pero ahi lo dejo xd
 	{
 		PlayerPrefs.DeleteAll ();
+	}
+
+	public void retry()
+	{
+		Application.LoadLevel("main_game");
+	}
+
+	public void quitGame()
+	{
+		Application.LoadLevel("start_window");
 	}
 }
 

@@ -63,13 +63,14 @@ public class Database : MonoBehaviour {
             }
             if (current_health <= 0) 
             {	
-				
+				/*
 			    int [] array = new int[2];
 			    array[0] = Screen.width;
 			    array[1] = Screen.height;
 			    myCamera.SendMessage ("takeScreenshot",array);
 			    auxCounter (0.3f); //Este pequeño delay en cambiar de escena es para que renderice el jugador y la bala ya que son destruidas
-			    Application.LoadLevel ("user_input");
+				*/
+				Application.LoadLevel ("user_input");
                 Destroy(GameObject.Find("Player"));
             }
 
