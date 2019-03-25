@@ -60,7 +60,7 @@ public class PlayerBulletCollider : MonoBehaviour
         {
             bounces++;
 
-            if (bounces< MAX_BOUNCES)
+            if (bounces< MAX_BOUNCES && Database.bouncingBullets)
             {
                 Rigidbody bulletRig = GetComponent<Rigidbody>();
 

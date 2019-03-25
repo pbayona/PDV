@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
+    public static float musicVolume;
+    public static float sfxVolume;
+    public static float generalVolume;
+
     public AudioSource killSource;
     public AudioSource shootSource;
     public AudioSource explosionSource;
@@ -34,4 +38,39 @@ public class AudioManager : MonoBehaviour
         explosion.Play(0);
     }
 
+    public static void setGeneralVolume(float volume)
+    {
+        generalVolume = volume;
+        updateAllVolumes();
+    }
+
+    public static void setMusicVolume(float volume)
+    {
+        musicVolume = volume;
+        updateMusicVolumes();
+    }
+
+    public static void setSfxVolume(float volume)
+    {
+        musicVolume = volume;
+        updateSfxVolumes();
+    }
+
+    public static void updateAllVolumes()
+    {
+        updateMusicVolumes();
+        updateSfxVolumes();
+    }
+
+    public static void updateMusicVolumes()
+    {
+        //.volume = (generalVolume / 100) * musicVolume;
+    }
+
+    public static void updateSfxVolumes()
+    {
+        kill.volume = (generalVolume / 100) * sfxVolume;
+        shoot.volume = (generalVolume / 100) * sfxVolume;
+        explosion.volume = (generalVolume / 100) * sfxVolume;
+    }
 }
