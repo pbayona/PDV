@@ -37,7 +37,7 @@ public class Leaderboard : MonoBehaviour
 		
 	static void sort()
 	{
-		players.Sort (sortByScore);
+		players.Sort(sortByScore);
 	}
 
 	static int sortByScore(Player p1, Player p2){ //Ordenar jugadores por puntuacion

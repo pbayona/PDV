@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Niveles/start_window.unity
+- path: Assets/Niveles/user_input.unity
   isLoaded: 1
   isActive: 1
