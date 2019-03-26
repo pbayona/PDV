@@ -18,6 +18,7 @@ public class EnemyBulletCollider : MonoBehaviour
         }
         else if (col.gameObject.name == "Bullet(Clone)")
         {
+            Debug.Log("Colisión");
             AudioManager.PlayExplosion();
             Destroy(gameObject);
             Destroy(col.gameObject);
