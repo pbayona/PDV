@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 //KEYS para nombres - {0,1,2,3,4,5,6,7,8,9}
 //KEYS para scores - {score0, score1, score2, score3, score4, score5, score6, score7, score8, score9}
 
@@ -31,7 +32,7 @@ public class Leaderboard : MonoBehaviour
 	public static int current_players = 0;
 	public static int highest_score;
 	public static List<Player> players;
-	public GUIStyle pStyle;
+	public Text ranking;
 		
 	static void sort()
 	{
@@ -89,11 +90,11 @@ public class Leaderboard : MonoBehaviour
 
 	void OnGUI() //Metodo que contiene todo lo que se ve en pantalla
 	{
-		int incremento = 0;
+		string aux = "";
 		foreach (Player player in players) { //Mostrar el ranking, recorre la lista de players (Siempre está ordenada por sort())
-			GUI.Label(new Rect(40, (100 + incremento), 400, 200),"Name < " + player.getName() + " > " + "-----" + " Points < " + player.getScore().ToString() + " >", pStyle);
-			incremento += 25;
+			aux += "\nName < " + player.getName() + " > " + "-----" + " Points < " + player.getScore().ToString() + " >";           
 		}
+		ranking.text = aux;
 	}
 
 	public static void instantiateList()
