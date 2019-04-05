@@ -31,7 +31,7 @@ public class Main_PlayerMovement : MonoBehaviour
         {
             AudioManager.PlayShoot();
 
-            GameObject spawn_bullet = Instantiate(bullet, transform.position + new Vector3(0.7f, 0, 0), Quaternion.Euler(0, 0, 90));
+            GameObject spawn_bullet = Instantiate(bullet, transform.position + new Vector3(0.7f, 0, 0), Quaternion.Euler(0, 0, 0));
             spawn_bullet.GetComponent<Rigidbody>().AddForce(Vector3.right * 500);
 
         }

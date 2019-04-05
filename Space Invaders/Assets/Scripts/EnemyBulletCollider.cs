@@ -34,7 +34,7 @@ public class EnemyBulletCollider : MonoBehaviour
             Destroy(gameObject);
             Destroy(col.gameObject);
         }
-        else if (col.gameObject.tag == "Bound")
+		else if (col.gameObject.tag == "Bound") /*Hay que mirar esto */
         {
             bounces++;
 

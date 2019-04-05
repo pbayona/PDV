@@ -56,7 +56,7 @@ public class PlayerBulletCollider : MonoBehaviour
             Destroy(col.gameObject);
 
         }
-        else if (col.gameObject.tag == "Bound")
+        else if (col.gameObject.tag == "Bound") /*Hay que mirar esto */
         {
             bounces++;
 
@@ -87,7 +87,7 @@ public class PlayerBulletCollider : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        else if(col.gameObject.name == "Bullet(Clone)")
+        else if(col.gameObject.tag == "PlayerBullet")
         {
             Destroy(gameObject);
         }
