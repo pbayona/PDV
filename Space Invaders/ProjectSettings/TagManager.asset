@@ -9,6 +9,8 @@ TagManager:
   - Boss
   - Bound
   - Texto
+  - EnemyBullet
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

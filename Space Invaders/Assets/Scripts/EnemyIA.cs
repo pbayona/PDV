@@ -20,7 +20,7 @@ public class EnemyIA : MonoBehaviour
             //Dispara
             if (Random.Range(0, Database.chancesOfShooting) == 0)
             {
-				GameObject fire_bullet = Instantiate(enemy_bullet, transform.position, Quaternion.Euler(0,0,90));
+				GameObject fire_bullet = Instantiate(enemy_bullet, transform.position, Quaternion.Euler(0,0,0));
                 fire_bullet.GetComponent<Rigidbody>().AddForce(-Vector3.right * 400);
             }
 

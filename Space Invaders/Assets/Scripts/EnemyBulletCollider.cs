@@ -11,12 +11,12 @@ public class EnemyBulletCollider : MonoBehaviour
     public void OnTriggerEnter(Collider col)
     {
 
-        if (col.gameObject.name == "Player")
+        if (col.gameObject.tag == "Player")
         {
             Database.hitPlayer();
             Destroy(gameObject);
         }
-        else if (col.gameObject.name == "Bullet(Clone)")
+        else if (col.gameObject.tag == "PlayerBullet")
         {
             Debug.Log("Colisión");
             AudioManager.PlayExplosion();

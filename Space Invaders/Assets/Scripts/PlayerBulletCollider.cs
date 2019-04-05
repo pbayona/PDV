@@ -79,7 +79,7 @@ public class PlayerBulletCollider : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        else if (col.gameObject.name == "Player")
+        else if (col.gameObject.tag == "Player")
         {
             if (friendlyFire)
             {
@@ -91,12 +91,12 @@ public class PlayerBulletCollider : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        else if(col.gameObject.name == "Enemy Bullet(Clone)")
+		else if(col.gameObject.tag == "EnemyBullet")
         {
             Destroy(col.gameObject);
             Destroy(gameObject);
         }
-        else if (col.gameObject.name != "Player")
+        else if (col.gameObject.tag != "Player")
         {
             Destroy(gameObject);
             Debug.Log("Colisión no contemplada con " + col.gameObject.name);
