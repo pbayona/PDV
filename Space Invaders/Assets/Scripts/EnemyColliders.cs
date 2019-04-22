@@ -33,16 +33,13 @@ public class EnemyColliders : MonoBehaviour
                 Destroy(col.gameObject);
             }
         }
-        else if(gameObject.tag == "Boss")
+        else if(gameObject.tag == "Boss" && col.gameObject.name == "Bottom_Barrier")
         {
-            if (col.gameObject.name == "Bottom_Barrier")
-            {	
-				Debug.Log ("El boss ha muerto");
-				GameObject camera = GameObject.FindGameObjectWithTag ("MainCamera"); /*Pillo la camara ya que necesito llamar a un metodo
-				de database y por estáticos peta */ 
-				camera.SendMessage ("callRespawn");
-                Destroy(gameObject);
-            }
+			Debug.Log ("El boss ha muerto");
+			GameObject camera = GameObject.FindGameObjectWithTag ("MainCamera"); /*Pillo la camara ya que necesito llamar a un metodo
+			de database y por estáticos peta */ 
+			camera.SendMessage ("callRespawn");
+            Destroy(gameObject);
         }
 
 

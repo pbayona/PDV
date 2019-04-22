@@ -5,7 +5,7 @@ public class Kids_PlayerMovement : MonoBehaviour
 {
     private Vector3 movement = Vector3.zero;
     private CharacterController controller;
-    private int playerSpeed = 10;
+    private readonly int playerSpeed = 10;
 
     void Start()
     {

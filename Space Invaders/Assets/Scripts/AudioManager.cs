@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class AudioManager : MonoBehaviour
 {
     public static float musicVolume;
@@ -22,7 +23,7 @@ public class AudioManager : MonoBehaviour
         shoot = shootSource;
         explosion = explosionSource;
     }
-		
+
     public static void PlayKill()
     {
         kill.Play(0);

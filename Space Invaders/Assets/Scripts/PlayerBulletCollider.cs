@@ -2,22 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerBulletCollider : MonoBehaviour
+public class PlayerBulletCollider : Bullet
 {
-    private static GameObject player;
-    private bool friendlyFire;
+    private static GameObject player;  
+    private bool friendlyFire;         
 
-    private int bounces = 0;
-    private const int MAX_BOUNCES = 5;
-    private const int SPEED = 500;
-	private int aux;
-	 
+	private int aux;    
 
-	void Start()
+
+    void Start()
 	{
-        player = GameObject.FindWithTag("Player");
-        StartCoroutine(Counter(1));
-		aux = 0;
+        speed = 500;
+
+        player = GameObject.FindWithTag("Player");  
+        StartCoroutine(Counter(1));                 
+        aux = 0;                                    
     }
 
 
@@ -27,81 +26,85 @@ public class PlayerBulletCollider : MonoBehaviour
 
         if (col.gameObject.tag == "Enemy")
         {
-			Database.enemies.Remove (col.gameObject);
-            AudioManager.PlayKill();
-            Database.killedEnemy();
-            Destroy(gameObject);
-            Destroy(col.gameObject);
+            colEnemy(col);
         }
         else if (col.gameObject.tag == "Boss")
         {
-			GameObject camera = GameObject.FindGameObjectWithTag ("MainCamera"); /*Pillo la camara ya que necesito llamar a un metodo
-				de database y por estáticos peta*/
-			camera.SendMessage ("callRespawn");
-            AudioManager.PlayKill();
-            Destroy(gameObject);
-            Destroy(col.gameObject);
-            Database.current_score += 150;
-
+            colBoss(col);
         }
         else if (col.gameObject.tag == "Barrier")
-        {		
-			Database.collisions++;	
-			if (Database.collisions == 1) {
-				GameObject camera = GameObject.FindGameObjectWithTag ("MainCamera");
-				//Database.call ();
-				camera.SendMessage ("call");
-			}
-            Destroy(gameObject);
-            Destroy(col.gameObject);
-
+        {
+            colBarrier(col);
         }
         else if (col.gameObject.tag == "Bound") /*Hay que mirar esto */
         {
-            bounces++;
-
-            if (bounces< MAX_BOUNCES && Database.bouncingBullets)
-            {
-                Rigidbody bulletRig = GetComponent<Rigidbody>();
-
-                Vector3 bulletToPlayer = new Vector3 (Main_PlayerMovement.position.x - transform.position.x, 
-                    Main_PlayerMovement.position.y - transform.position.y, 0);
-                bulletToPlayer = Vector3.Normalize(bulletToPlayer);
-
-                bulletRig.velocity = Vector3.zero;
-
-                bulletRig.AddForce(bulletToPlayer * (SPEED + bounces * 50));
-                transform.LookAt(transform.position + bulletToPlayer);
-                transform.Rotate(90, 0, 0);
-            }
-            else
-            {
-                Destroy(gameObject);
-            }
+            colBound(col);
         }
         else if (col.gameObject.tag == "Player")
         {
-            if (friendlyFire)
-            {
-                Database.hitPlayer();
-                Destroy(gameObject);
-            }
+            colPlayer(col);
         }
         else if(col.gameObject.tag == "PlayerBullet")
         {
-            Destroy(gameObject);
+            colPlayerBullet(col);
         }
 		else if(col.gameObject.tag == "EnemyBullet")
         {
-            Destroy(col.gameObject);
-            Destroy(gameObject);
+            colEnemyBullet(col);
         }
         else if (col.gameObject.tag != "Player")
         {
-            Destroy(gameObject);
-            Debug.Log("Colisión no contemplada con " + col.gameObject.name);
+            colElse(col);
         }
     }
+
+    /*Métodos auxiliares para colisiones*/
+
+    public override void colPlayer(Collider col)
+    {
+        if (friendlyFire)
+        {
+            Database.hitPlayer();
+            Destroy(gameObject);
+        }
+    }
+    public override void colPlayerBullet(Collider col)
+    {
+        Destroy(gameObject);
+    }
+
+    void colEnemy(Collider col)
+    {
+        Database.enemies.Remove(col.gameObject);
+        AudioManager.PlayKill();
+        Database.killedEnemy();
+        Destroy(gameObject);
+        Destroy(col.gameObject);
+    }
+    void colBoss(Collider col)
+    {
+        GameObject camera = GameObject.FindGameObjectWithTag("MainCamera"); /*Pillo la camara ya que necesito llamar a un metodo
+				de database y por estáticos peta*/
+        camera.SendMessage("callRespawn");
+        AudioManager.PlayKill();
+        Destroy(gameObject);
+        Destroy(col.gameObject);
+        Database.current_score += 150;
+    }
+
+    void colEnemyBullet(Collider col)
+    {
+        Destroy(col.gameObject);
+        Destroy(gameObject);
+    }
+    void colElse(Collider col)
+    {
+        Destroy(gameObject);
+        Debug.Log("Colisión no contemplada con " + col.gameObject.name);
+    }
+
+
+    /*Para que al disparar la bala no nos haga daño*/
 
     IEnumerator Counter(int time)
     {

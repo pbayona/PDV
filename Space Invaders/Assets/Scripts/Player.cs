@@ -5,20 +5,20 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour {
 
-	private string name;
+	private string pjName;
 	private  int score;
 
 	#region UI
 
 	public Player(string n, int s)
 	{
-		name = n;
+		pjName = n;
 		score = s;
 	}
 
 	public void setName(string n)
 	{
-		name = n;
+		pjName = n;
 	}
 
 	public void setScore(int s)
@@ -28,7 +28,7 @@ public class Player : MonoBehaviour {
 
 	public string getName()
 	{
-		return name;
+		return pjName;
 	}
 
 	public int getScore()
