@@ -18,7 +18,7 @@ public class InputController : MonoBehaviour {
         }
         else if (entrada.text != null && entrada.text != "" ) {
 			Application.LoadLevel ("leaderboard");
-			Player aux = new Player (entrada.text, Database.current_score);
+			Player aux = new Player (entrada.text, Database.getScore());
 			Leaderboard.instantiateList ();
 			if (Leaderboard.addPlayer (aux)) {
 				Debug.Log ("Se ha creado un jugador y se ha añadido al ranking");

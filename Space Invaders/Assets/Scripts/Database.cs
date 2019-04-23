@@ -157,6 +157,32 @@ public sealed class Database : MonoBehaviour {
     {
         return chancesOfShooting;
     }
+
+    public static float getHorizontalMovementFrecuency()
+    {
+        return enemy_horizontalMovementFrecuency;
+    }
+
+    public static int getScore()
+    {
+        return current_score;
+    }
+
+    public static void setScore(int score)
+    {
+        current_score += score;
+    }
+
+    public static string getLastLoadedGame()
+    {
+        return lastLoadedGame;
+    }
+
+    public static List<GameObject> getEnemies()
+    {
+        return enemies;
+    }
+
     //GUI
 
     public void OnGUI()
