@@ -8,6 +8,9 @@ TagManager:
   - Barrier
   - Boss
   - Bound
+  - Texto
+  - EnemyBullet
+  - PlayerBullet
   layers:
   - Default
   - TransparentFX

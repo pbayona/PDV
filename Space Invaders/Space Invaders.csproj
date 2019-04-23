@@ -97,18 +97,29 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\SpaceInvaders\AudioManager.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\Database.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\EnemyBulletCollider.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\EnemyColliders.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\EnemyIA.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\EnemyMovement.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\FinishGame.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\Kids_PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\Main_PlayerMovement.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\PlayerBulletCollider.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\Score.cs" />
-    <Compile Include="Assets\Scripts\SpaceInvaders\StartWindow.cs" />
+    <Compile Include="Assets\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\BossIA.cs" />
+    <Compile Include="Assets\Scripts\Bullet.cs" />
+    <Compile Include="Assets\Scripts\ColorChanger.cs" />
+    <Compile Include="Assets\Scripts\Database.cs" />
+    <Compile Include="Assets\Scripts\EnemyBulletCollider.cs" />
+    <Compile Include="Assets\Scripts\EnemyColliders.cs" />
+    <Compile Include="Assets\Scripts\EnemyIA.cs" />
+    <Compile Include="Assets\Scripts\EnemyMovement.cs" />
+    <Compile Include="Assets\Scripts\FinishGame.cs" />
+    <Compile Include="Assets\Scripts\InputController.cs" />
+    <Compile Include="Assets\Scripts\Kids_PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\Leaderboard.cs" />
+    <Compile Include="Assets\Scripts\Main_PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\MenuHandlers\MainMenu.cs" />
+    <Compile Include="Assets\Scripts\MenuHandlers\OptionsMenu.cs" />
+    <Compile Include="Assets\Scripts\MenuHandlers\PlayMenu.cs" />
+    <Compile Include="Assets\Scripts\PauseMenu.cs" />
+    <Compile Include="Assets\Scripts\Player.cs" />
+    <Compile Include="Assets\Scripts\PlayerBulletCollider.cs" />
+    <Compile Include="Assets\Scripts\Score.cs" />
+    <Compile Include="Assets\Scripts\Screenshot.cs" />
+    <Compile Include="Assets\Scripts\StartWindow.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />

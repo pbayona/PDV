@@ -1,0 +1,23 @@
+a
+XE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\AudioManager.csutf-8[
+RE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\BossIA.csutf-8a
+XE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\ColorChanger.csutf-8]
+TE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Database.csutf-8h
+_E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyBulletCollider.csutf-8c
+ZE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyColliders.csutf-8\
+SE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyIA.csutf-8b
+YE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyMovement.csutf-8_
+VE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\FinishGame.csutf-8d
+[E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\InputController.csutf-8h
+_E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Kids_PlayerMovement.csutf-8`
+WE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Leaderboard.csutf-8h
+_E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Main_PlayerMovement.csutf-8j
+aE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\MenuHandlers\MainMenu.csutf-8m
+dE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\MenuHandlers\OptionsMenu.csutf-8j
+aE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\MenuHandlers\PlayMenu.csutf-8^
+UE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\PauseMenu.csutf-8[
+RE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Player.csutf-8i
+`E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\PlayerBulletCollider.csutf-8Z
+QE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Score.csutf-8_
+VE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Screenshot.csutf-8`
+WE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\StartWindow.csutf-8
