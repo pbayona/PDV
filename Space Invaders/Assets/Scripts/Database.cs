@@ -2,31 +2,48 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Database : MonoBehaviour {
+public sealed class Database : MonoBehaviour {
+    /*Singletone variables*/
+    private static int counter = 0;
+    private static Database instance = null;
+    public static Database getInstance
+    {
+        get
+        {
+            if (instance == null)
+                instance = new Database();
+            return instance;
+        }
+    }
 
-        public static bool bouncingBullets = true;
+    private Database()
+    {
+        counter++;
+    }
+        
+        private static bool bouncingBullets = true;
 
-        public static float enemy_shotMinTime;
-	    public static float enemy_shotMaxTime;
-	    public static float enemy_horizontalMovementFrecuency = 40.0f;
-        public static int chancesOfShooting;
-	    public Camera myCamera;
-	    public GameObject boss;
+        private static float enemy_shotMinTime;
+	    private static float enemy_shotMaxTime;
+	    private static float enemy_horizontalMovementFrecuency = 40.0f;
+        private static int chancesOfShooting;
+	    private Camera myCamera;
+	    private GameObject boss;
 
-        public static float current_enemies = 65;
-        public static float max_enemies = 65;
+        private static float current_enemies = 65;
+        private static float max_enemies = 65;
 
-        public static int current_score;
-        public static int current_health;
-        public static string lastLoadedGame; //Evita tener que hacer 2 escenas distintas para el finished de kids game y normal game
+        private static int current_score;
+        private static int current_health;
+        private static string lastLoadedGame; //Evita tener que hacer 2 escenas distintas para el finished de kids game y normal game
 
-        public GUISkin style;
-	    public static int collisions;
+        private GUISkin style;
+	    private static int collisions;
 	    private GameObject[] aliens;
-	    public static List<GameObject> enemies;
+	    private static List<GameObject> enemies;
 	    private static bool multiple; //Colision multiple en barreras o no
 	    private static int aux; //Almacenar el ultimo material cambiado
-	    public Vector3 respawn;
+	    private Vector3 respawn;
 
 	    void Start()
 	    {            
@@ -76,36 +93,73 @@ public class Database : MonoBehaviour {
 
         }
 
-        //Modifiers
+    //Custom getters and setters
 
-        public static void recalculateChances()
-        {
-            chancesOfShooting = (Score.current_enemies * 2);
-		    enemy_shotMinTime = ((current_enemies / max_enemies) * 19.0f + 1.0f);
-		    enemy_shotMaxTime = ((current_enemies / max_enemies) * 45.0f + 5.0f);
-        }
+    public static void recalculateChances()
+    {
+        chancesOfShooting = (Score.current_enemies * 2);
+        enemy_shotMinTime = ((current_enemies / max_enemies) * 19.0f + 1.0f);
+        enemy_shotMaxTime = ((current_enemies / max_enemies) * 45.0f + 5.0f);
+    }
 
-        public static void killedEnemy()
-        {
-            current_score += 100;
-            current_enemies -= 1;
-            recalculateChances();
-            recalculateFrecuency();
-        }
+    public static void killedEnemy()
+    {
+        current_score += 100;
+        current_enemies -= 1;
+        recalculateChances();
+        recalculateFrecuency();
+    }
 
-        public static void hitPlayer()
-        {
-            current_health--;
-        }
+    public static void hitPlayer()
+    {
+        current_health--;
+    }
 
-        public static void recalculateFrecuency()
-        {
-            enemy_horizontalMovementFrecuency = ((current_enemies / max_enemies) * 35 + 5);
-        }
+    public static void recalculateFrecuency()
+    {
+        enemy_horizontalMovementFrecuency = ((current_enemies / max_enemies) * 35 + 5);
+    }
 
-        //GUI
+    public static void incrementCollisions()
+    {
+        Database.collisions++;
+    }
 
-        public void OnGUI()
+    
+    //Default getters and setters
+
+    public static int getCollisions()
+    {
+        return Database.collisions;
+    }
+
+    public static void setBouncingBullets(bool boolean)
+    {
+        Database.bouncingBullets = boolean;
+    }
+
+    public static bool getBouncingBullets()
+    {
+        return Database.bouncingBullets;
+    }
+
+    public static float getShotMinTime()
+    {
+        return enemy_shotMinTime;
+    }
+
+    public static float getShotMaxTime()
+    {
+        return enemy_shotMaxTime;
+    }
+
+    public static float getChancesOfShooting()
+    {
+        return chancesOfShooting;
+    }
+    //GUI
+
+    public void OnGUI()
         {
             GUI.skin = style;
             GUI.Label(new Rect(10, 20, 200, 50), "SCORE < " + current_score.ToString() + " >");

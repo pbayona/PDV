@@ -10,7 +10,7 @@ public class EnemyIA : MonoBehaviour
     void Start()
     {
         //Asign enemies to the list
-        countdown = Random.Range(Database.enemy_shotMinTime, Database.enemy_shotMaxTime);
+        countdown = Random.Range(Database.getShotMinTime(), Database.getShotMaxTime());
     }
 
     void Update()
@@ -18,14 +18,14 @@ public class EnemyIA : MonoBehaviour
         if (countdown <= 0)
         {
             //Dispara
-            if (Random.Range(0, Database.chancesOfShooting) == 0)
+            if (Random.Range(0, Database.getChancesOfShooting()) == 0)
             {
 				GameObject fire_bullet = Instantiate(enemy_bullet, transform.position, Quaternion.Euler(0,0,0));
                 fire_bullet.GetComponent<Rigidbody>().AddForce(-Vector3.right * 400);
             }
 
             //Instancia un nuevo timer
-            countdown = Random.Range(Database.enemy_shotMinTime, Database.enemy_shotMaxTime);
+            countdown = Random.Range(Database.getShotMinTime(), Database.getShotMaxTime());
         }
         else
         {
