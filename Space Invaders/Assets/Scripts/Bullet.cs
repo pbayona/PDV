@@ -10,8 +10,8 @@ public abstract class Bullet : MonoBehaviour {
 
     public void colBarrier(Collider col)
     {
-        Database.collisions++;
-        if (Database.collisions == 1)
+        Database.incrementCollisions();
+        if (Database.getCollisions() == 1)
         {
             GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
             //Database.call ();
@@ -24,7 +24,7 @@ public abstract class Bullet : MonoBehaviour {
     {
         bounces++;
 
-        if (bounces < MAX_BOUNCES && Database.bouncingBullets)
+        if (bounces < MAX_BOUNCES && Database.getBouncingBullets())
         {
             Rigidbody bulletRig = GetComponent<Rigidbody>();
 

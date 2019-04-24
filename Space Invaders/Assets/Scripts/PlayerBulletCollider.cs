@@ -75,7 +75,7 @@ public class PlayerBulletCollider : Bullet
 
     void colEnemy(Collider col)
     {
-        Database.enemies.Remove(col.gameObject);
+        Database.getEnemies().Remove(col.gameObject);
         AudioManager.PlayKill();
         Database.killedEnemy();
         Destroy(gameObject);
@@ -89,7 +89,7 @@ public class PlayerBulletCollider : Bullet
         AudioManager.PlayKill();
         Destroy(gameObject);
         Destroy(col.gameObject);
-        Database.current_score += 150;
+        Database.setScore(150);
     }
 
     void colEnemyBullet(Collider col)

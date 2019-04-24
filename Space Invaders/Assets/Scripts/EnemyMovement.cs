@@ -26,7 +26,7 @@ public class EnemyMovement : MonoBehaviour
 
     void Update()
     {
-        frecuency = Database.enemy_horizontalMovementFrecuency;     //Funciona mal al matar un enemigo.
+        frecuency = Database.getHorizontalMovementFrecuency();     //Funciona mal al matar un enemigo.
 
         if (!is_boss)                                               //Si no es un jefe
         {

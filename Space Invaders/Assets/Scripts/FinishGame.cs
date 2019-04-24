@@ -15,7 +15,7 @@ public class FinishGame : MonoBehaviour
     void OnGUI()
     {
         GUI.Label(new Rect(20, 20, 1000, 500), label_text, labStyle);
-        points = Database.current_score;
+        points = Database.getScore();
 
         if (points > 0)
         {
@@ -25,7 +25,7 @@ public class FinishGame : MonoBehaviour
         if (GUI.Button(new Rect(40, 100, 195, 42), "RETRY", style))
         {
             //Reload
-            Application.LoadLevel(Database.lastLoadedGame);
+            Application.LoadLevel(Database.getLastLoadedGame());
         }
         if (GUI.Button(new Rect(40, 200, 370, 42), "QUIT GAME", style))
         {
