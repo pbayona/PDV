@@ -11,7 +11,7 @@ public class BossIA : MonoBehaviour
     // Use this for initialization
     void Start()
     {
-        StartCoroutine(BossShoot(0.7f));
+        StartCoroutine(BossShoot(0.9f));
     }
 
     public IEnumerator BossShoot(float time)

@@ -13,8 +13,8 @@ public class Database : MonoBehaviour {
 	    public Camera myCamera;
 	    public GameObject boss;
 
-        public static float current_enemies = 65;
-        public static float max_enemies = 65;
+        public static float current_enemies = 63;
+        public static float max_enemies = 63;
 
         public static int current_score;
         public static int current_health;

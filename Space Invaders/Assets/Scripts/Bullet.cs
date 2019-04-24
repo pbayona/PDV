@@ -35,8 +35,8 @@ public abstract class Bullet : MonoBehaviour {
             bulletRig.velocity = Vector3.zero;
 
             bulletRig.AddForce(bulletToPlayer * (speed + bounces * 50));
-            transform.LookAt(transform.position + bulletToPlayer);
-            transform.Rotate(90, 0, 0);
+            //transform.LookAt(transform.position + bulletToPlayer);
+            //transform.Rotate(90, 0, 0);
         }
         else
         {
