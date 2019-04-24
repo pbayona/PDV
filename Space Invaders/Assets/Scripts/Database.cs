@@ -29,7 +29,7 @@ public sealed class Database : MonoBehaviour
     private static float enemy_horizontalMovementFrecuency = 40.0f;
     private static int chancesOfShooting;
     private Camera myCamera;
-    public GameObject boss;
+    private GameObject boss;
 
     private static float current_enemies = 65;
     private static float max_enemies = 65;
@@ -98,27 +98,27 @@ public sealed class Database : MonoBehaviour
 
     public static void recalculateChances()
     {
-        chancesOfShooting = (Score.current_enemies * 2);
-        enemy_shotMinTime = ((current_enemies / max_enemies) * 19.0f + 1.0f);
-        enemy_shotMaxTime = ((current_enemies / max_enemies) * 45.0f + 5.0f);
+        Database.chancesOfShooting = (Score.current_enemies * 2);
+        Database.enemy_shotMinTime = ((current_enemies / max_enemies) * 19.0f + 1.0f);
+        Database.enemy_shotMaxTime = ((current_enemies / max_enemies) * 45.0f + 5.0f);
     }
 
     public static void killedEnemy()
     {
-        current_score += 100;
-        current_enemies -= 1;
-        recalculateChances();
-        recalculateFrecuency();
+        Database.current_score += 100;
+        Database.current_enemies -= 1;
+        Database.recalculateChances();
+        Database.recalculateFrecuency();
     }
 
     public static void hitPlayer()
     {
-        current_health--;
+        Database.current_health--;
     }
 
     public static void recalculateFrecuency()
     {
-        enemy_horizontalMovementFrecuency = ((current_enemies / max_enemies) * 35 + 5);
+        Database.enemy_horizontalMovementFrecuency = ((current_enemies / max_enemies) * 35 + 5);
     }
 
     public static void incrementCollisions()
