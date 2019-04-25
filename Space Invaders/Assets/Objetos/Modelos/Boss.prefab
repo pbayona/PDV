@@ -1150,6 +1150,7 @@ GameObject:
   - component: {fileID: 95829232456381652}
   - component: {fileID: 54345127936937830}
   - component: {fileID: 65550965491768358}
+  - component: {fileID: 114137969541886432}
   - component: {fileID: 114513281602013194}
   - component: {fileID: 114556306302630702}
   m_Layer: 0
@@ -5353,7 +5354,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
---- !u!114 &114513281602013194
+--- !u!114 &114137969541886432
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -5361,13 +5362,24 @@ MonoBehaviour:
   m_GameObject: {fileID: 1895823048206470}
   m_Enabled: 1
   m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12305d3656510eb4f9221ef28ac76eae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distance: 10
+--- !u!114 &114513281602013194
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1895823048206470}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e79ce64029744b24eb4eecaad5a0e859, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   distance: 10
   counter: 0
   frecuency: 0
-  is_boss: 1
 --- !u!114 &114556306302630702
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5390,10 +5402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c4787682ec7c1e43a13ac58941dfb16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_bullet: {fileID: 1772154678458332, guid: 7602e372797d68c4fae4ef64d5f8a84c,
+  enemy_bullet: {fileID: 1063292621232578, guid: 30fa877c1d405d849bc8ef3ebd66a23e,
     type: 2}
-  muro: {fileID: 0}
-  boss: {fileID: 0}
 --- !u!114 &114774890035893448
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5405,7 +5415,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8c4787682ec7c1e43a13ac58941dfb16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemy_bullet: {fileID: 1772154678458332, guid: 7602e372797d68c4fae4ef64d5f8a84c,
+  enemy_bullet: {fileID: 1063292621232578, guid: 30fa877c1d405d849bc8ef3ebd66a23e,
     type: 2}
-  muro: {fileID: 0}
-  boss: {fileID: 0}

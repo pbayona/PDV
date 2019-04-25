@@ -3,12 +3,11 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Player : MonoBehaviour {
+public class Player {
 
 	private string pjName;
 	private  int score;
 
-	#region UI
 
 	public Player(string n, int s)
 	{
@@ -35,7 +34,6 @@ public class Player : MonoBehaviour {
 	{
 		return score;
 	}
-
-	#endregion
+		
 
 }

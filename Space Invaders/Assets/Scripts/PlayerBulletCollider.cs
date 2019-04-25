@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class PlayerBulletCollider : Bullet
 {
-    private static GameObject player;  
+	public bool p1;
     private bool friendlyFire;         
-
-	private int aux;    
-
 
     void Start()
 	{
         speed = 500;
-
-        player = GameObject.FindWithTag("Player");  
-        StartCoroutine(Counter(1));                 
-        aux = 0;                                    
+        StartCoroutine(Counter(1));                                        
     }
 
 
@@ -66,6 +60,7 @@ public class PlayerBulletCollider : Bullet
         {
             Database.hitPlayer();
             Destroy(gameObject);
+			Destroy (col.gameObject);
         }
     }
     public override void colPlayerBullet(Collider col)
@@ -77,7 +72,12 @@ public class PlayerBulletCollider : Bullet
     {
         Database.getEnemies().Remove(col.gameObject);
         AudioManager.PlayKill();
-        Database.killedEnemy();
+		if (p1 == true) {
+			Database.killedEnemy (1);
+		} else {
+			Database.killedEnemy (2);
+		}
+        
         Destroy(gameObject);
         Destroy(col.gameObject);
     }
@@ -89,7 +89,19 @@ public class PlayerBulletCollider : Bullet
         AudioManager.PlayKill();
         Destroy(gameObject);
         Destroy(col.gameObject);
-        Database.setScore(150);
+		if (Database.getTwoPlayers ()) {
+			if (p1 == true) {
+				Database.setScore1 (150);
+				Score2.p1current_score = Database.getScore1 ();
+			} else {
+				Database.setScore2 (150);
+				Score2.p2current_score = Database.getScore2 ();
+			}
+		} else {
+			Database.setScore1 (150);
+			Score.p1current_score = Database.getScore1 ();
+		}
+			
     }
 
     void colEnemyBullet(Collider col)

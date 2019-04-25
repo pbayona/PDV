@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public sealed class Database : MonoBehaviour
 {
@@ -23,20 +24,20 @@ public sealed class Database : MonoBehaviour
     }
 
     private static bool bouncingBullets = true;
+	private static bool twoPlayers = false;
 
     private static float enemy_shotMinTime;
     private static float enemy_shotMaxTime;
     private static float enemy_horizontalMovementFrecuency = 40.0f;
     private static int chancesOfShooting;
     private Camera myCamera;
-    private GameObject boss;
 
-    private static float current_enemies = 65;
-    private static float max_enemies = 65;
+    private static float current_enemies = 63;
+    private static float max_enemies = 63;
 
-    private static int current_score;
+    private static int p1current_score;
+	private static int p2current_score;
     private static int current_health;
-    private static string lastLoadedGame; //Evita tener que hacer 2 escenas distintas para el finished de kids game y normal game
 
     private GUISkin style;
     private static int collisions;
@@ -44,7 +45,7 @@ public sealed class Database : MonoBehaviour
     private static List<GameObject> enemies;
     private static bool multiple; //Colision multiple en barreras o no
     private static int aux; //Almacenar el ultimo material cambiado
-    private Vector3 respawn;
+   
 
     void Start()
     {
@@ -58,59 +59,58 @@ public sealed class Database : MonoBehaviour
         enemy_shotMinTime = 20.0f;
         enemy_shotMaxTime = 50.0f;
         multiple = false;
-        respawn.x = 12.3f;
-        respawn.y = 9.49f;
-        respawn.z = 8.8f;
 
         collisions = 0;
-        current_score = 0;
-        current_enemies = 65;
-        current_health = 1;
-        lastLoadedGame = Application.loadedLevelName;   //En database almacenamos si se ha cargado la escena para niños o de mayores de 13 y luego en finish game pedimos el nombre
-
+        p1current_score = 0;
+		p2current_score = 0;
+		if (twoPlayers == true) {
+			current_health = 2;
+		} else {
+			current_health = 1;
+		}
         recalculateFrecuency();
         recalculateChances();
     }
 
     void Update()
     {
-        if (current_enemies == 0) //esto está deprecated jajaja xd
-        {
-            Application.LoadLevel("win_game");
-            //Captura de pantalla
-        }
+
         if (current_health <= 0)
         {
-            /*
-            int [] array = new int[2];
-            array[0] = Screen.width;
-            array[1] = Screen.height;
-            myCamera.SendMessage ("takeScreenshot",array);
-            auxCounter (0.3f); //Este pequeño delay en cambiar de escena es para que renderice el jugador y la bala ya que son destruidas
-            */
-            Application.LoadLevel("user_input");
-            Destroy(GameObject.Find("Player"));
+			SceneManager.LoadScene ("user_input",LoadSceneMode.Single);
         }
-
     }
 
     //Custom getters and setters
 
     public static void recalculateChances()
     {
-        Database.chancesOfShooting = (Score.current_enemies * 2);
+		Database.chancesOfShooting = (int)(current_enemies*2);
         Database.enemy_shotMinTime = ((current_enemies / max_enemies) * 19.0f + 1.0f);
         Database.enemy_shotMaxTime = ((current_enemies / max_enemies) * 45.0f + 5.0f);
     }
 
-    public static void killedEnemy()
+	public static void killedEnemy(int aux) //Este aux me indica si el que ha matado ha sido el jugador 0 o 1
     {
-        Database.current_score += 100;
+		if (getTwoPlayers ()) {
+			if (aux == 1) {
+				p1current_score += 100; 
+				Score2.p1current_score = p1current_score;
+			} else {
+				p2current_score += 100; 
+				Score2.p2current_score = p2current_score;
+			}
+		} 
+		else {
+			p1current_score += 100; 
+			Score.p1current_score = p1current_score;
+		}
+        
         Database.current_enemies -= 1;
         Database.recalculateChances();
         Database.recalculateFrecuency();
     }
-
+		
     public static void hitPlayer()
     {
         Database.current_health--;
@@ -125,8 +125,7 @@ public sealed class Database : MonoBehaviour
     {
         Database.collisions++;
     }
-
-
+		
     //Default getters and setters
 
     public static int getCollisions()
@@ -138,6 +137,16 @@ public sealed class Database : MonoBehaviour
     {
         Database.bouncingBullets = boolean;
     }
+
+	public static void setTwoPlayers(bool boolean)
+	{
+		Database.twoPlayers = boolean;
+	}
+
+	public static bool getTwoPlayers()
+	{
+		return Database.twoPlayers;
+	}
 
     public static bool getBouncingBullets()
     {
@@ -154,7 +163,7 @@ public sealed class Database : MonoBehaviour
         return enemy_shotMaxTime;
     }
 
-    public static float getChancesOfShooting()
+    public static int getChancesOfShooting()
     {
         return chancesOfShooting;
     }
@@ -164,35 +173,31 @@ public sealed class Database : MonoBehaviour
         return enemy_horizontalMovementFrecuency;
     }
 
-    public static int getScore()
+    public static int getScore1()
     {
-        return current_score;
+        return p1current_score;
     }
 
-    public static void setScore(int score)
+	public static int getScore2()
+	{
+		return p2current_score;
+	}
+
+    public static void setScore1(int score)
     {
-        current_score += score;
+        p1current_score += score;
     }
 
-    public static string getLastLoadedGame()
-    {
-        return lastLoadedGame;
-    }
-
+	public static void setScore2(int score)
+	{
+		p2current_score += score;
+	}
+				
     public static List<GameObject> getEnemies()
     {
         return enemies;
     }
-
-    //GUI
-
-    public void OnGUI()
-    {
-        GUI.skin = style;
-        GUI.Label(new Rect(10, 20, 200, 50), "SCORE < " + current_score.ToString() + " >");
-        GUI.Label(new Rect(10, 700, 200, 50), "LIVES < " + current_health.ToString() + " >");
-    }
-
+		
     private void CollisionColor()
     {
         int j;
@@ -246,17 +251,7 @@ public sealed class Database : MonoBehaviour
         StartCoroutine(CollisionCounter(0.1f));
     }
 
-    public void callRespawn() //Llama al contador de respawn del boss
-    {
-        StartCoroutine(bossRespawn(10));
-    }
-
-    IEnumerator bossRespawn(int time)
-    {
-        yield return new WaitForSecondsRealtime(time);
-        Instantiate(boss, respawn, Quaternion.Euler(0, 0, 90));
-    }
-
+    
     public static void invertBouncingBullets()
     {
         if (bouncingBullets)
@@ -268,4 +263,18 @@ public sealed class Database : MonoBehaviour
             bouncingBullets = true;
         }
     }
+	public static void invertTwoPlayers()
+	{
+		if (twoPlayers) {
+			twoPlayers = false;
+		} else {
+			twoPlayers = true;
+		}
+	}
+
+	public static void reset() /* Metodo llamado desde leaderboard y pause menu cada vez que se reinicia una partida para que resetee los puntos */
+	{
+		p1current_score = 0;
+		p2current_score = 0;
+	}
 }

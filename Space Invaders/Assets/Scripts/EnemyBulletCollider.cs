@@ -34,6 +34,7 @@ public class EnemyBulletCollider : Bullet
     {
         Database.hitPlayer();
         Destroy(gameObject);
+		Destroy (col.gameObject);
     }
 
     public override void colPlayerBullet(Collider col)

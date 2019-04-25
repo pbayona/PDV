@@ -1,18 +1,24 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayMenu : MonoBehaviour {
 
     public void playArcadeGame()
     {
-        Application.LoadLevel("main_game");
+		if (Database.getTwoPlayers()) {
+			SceneManager.LoadScene ("main_game_2players",LoadSceneMode.Single);
+		} else {			
+			SceneManager.LoadScene ("main_game",LoadSceneMode.Single);
+		}
+
     }
 
     public void playSurvivalGame()
     {
         Debug.Log("Aquí tienes tu tortura.");
-        Application.LoadLevel("kids_game");
+		SceneManager.LoadScene ("kids_game",LoadSceneMode.Single);
     }
 
     public void showConfig(GameObject config)
@@ -26,6 +32,11 @@ public class PlayMenu : MonoBehaviour {
             config.SetActive(true);
         }
     }
+
+	public void twoPlayers()
+	{
+		Database.invertTwoPlayers ();
+	}
 
     public void bouncingBullets()
     {

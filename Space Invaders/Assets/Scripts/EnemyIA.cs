@@ -17,7 +17,7 @@ public class EnemyIA : MonoBehaviour
     {
         if (countdown <= 0)
         {
-            //Dispara
+			
             if (Random.Range(0, Database.getChancesOfShooting()) == 0)
             {
 				GameObject fire_bullet = Instantiate(enemy_bullet, transform.position, Quaternion.Euler(0,0,0));

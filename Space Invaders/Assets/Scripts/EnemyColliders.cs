@@ -24,13 +24,10 @@ public class EnemyColliders : MonoBehaviour
             {
                 Debug.Log("Un marciano escapó!!!");
             }
-            else if (col.gameObject.name == "Player")
+            else if (col.gameObject.tag == "Player")
             {
                 Database.hitPlayer();
-            }
-            else if (col.gameObject.tag == "Barrier")
-            {
-                Destroy(col.gameObject);
+				Destroy (col.gameObject);
             }
         }
         else if(gameObject.tag == "Boss" && col.gameObject.name == "Bottom_Barrier")

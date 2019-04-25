@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 //KEYS para nombres - {0,1,2,3,4,5,6,7,8,9}
 //KEYS para scores - {score0, score1, score2, score3, score4, score5, score6, score7, score8, score9}
 
@@ -124,12 +125,17 @@ public class Leaderboard : MonoBehaviour
 
 	public void retry()
 	{
-		Application.LoadLevel("main_game");
+		if (Database.getTwoPlayers ()) {
+			SceneManager.LoadScene ("main_game_2players", LoadSceneMode.Single);
+		} else {
+			SceneManager.LoadScene ("main_game", LoadSceneMode.Single);
+		}
+		Database.reset ();
 	}
 
 	public void quitGame()
 	{
-		Application.LoadLevel("start_window");
+		SceneManager.LoadScene ("start_window",LoadSceneMode.Single);
 	}
 }
 

@@ -34,8 +34,14 @@ public class PauseMenu : MonoBehaviour {
 
 	public void retry()
 	{
+		Database.reset(); //resetear puntuacion
 		Time.timeScale = 1f;
-		Application.LoadLevel("main_game");
+		if (Database.getTwoPlayers ()) {
+			SceneManager.LoadScene ("main_game_2players",LoadSceneMode.Single);
+		} else {
+			SceneManager.LoadScene ("main_game",LoadSceneMode.Single);
+		}
+
 	}
 
 	public void pause()
