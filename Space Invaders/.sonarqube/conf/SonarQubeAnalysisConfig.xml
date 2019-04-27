@@ -7,7 +7,7 @@
   <HasBeginStepCommandLineCredentials>true</HasBeginStepCommandLineCredentials>
   <SonarQubeHostUrl>http://localhost:9000</SonarQubeHostUrl>
   <SonarQubeVersion>7.7.0.23042</SonarQubeVersion>
-  <SonarProjectKey>pdv</SonarProjectKey>
+  <SonarProjectKey>pdv2</SonarProjectKey>
   <AdditionalConfig>
     <ConfigSetting Id="BuildUri" />
     <ConfigSetting Id="TfsUri" />
@@ -88,7 +88,7 @@
     <Property Name="sonar.java.collectAnalysisErrors">false</Property>
     <Property Name="sonar.updatecenter.url">https://update.sonarsource.org/update-center.properties</Property>
     <Property Name="sonar.core.id">BF41A1F2-AWpAnyx2g3SAywAuw6rp</Property>
-    <Property Name="sonar.core.startTime">22/04/2019 15:37:04</Property>
+    <Property Name="sonar.core.startTime">27/04/2019 13:11:41</Property>
   </ServerSettings>
   <LocalSettings>
     <Property Name="sonar.host.url">http://localhost:9000</Property>

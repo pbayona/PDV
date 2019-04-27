@@ -2,80 +2,152 @@ Initialize engine version: 2017.1.0f3 (472613c02cf7)
 GfxDevice: creating device client; threaded=1
 Direct3D:
     Version:  Direct3D 11.0 [level 11.1]
-    Renderer: Intel(R) HD Graphics Family (ID=0xa16)
-    Vendor:   Intel
-    VRAM:     1106 MB
-    Driver:   10.18.15.4248
+    Renderer: NVIDIA GeForce GTX 1080 (ID=0x1b80)
+    Vendor:   NVIDIA
+    VRAM:     8079 MB
+    Driver:   25.21.14.1616
 Begin MonoManager ReloadAssembly
-Loading C:\Users\jjust\Desktop\GameDev\GitHub\PDV\SpaceInvaders_Data\Managed\UnityEngine.dll into Unity Child Domain
-Platform assembly: C:\Users\jjust\Desktop\GameDev\GitHub\PDV\SpaceInvaders_Data\Managed\System.Core.dll (this message is harmless)
-Loading C:\Users\jjust\Desktop\GameDev\GitHub\PDV\SpaceInvaders_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
-Loading C:\Users\jjust\Desktop\GameDev\GitHub\PDV\SpaceInvaders_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
-Loading C:\Users\jjust\Desktop\GameDev\GitHub\PDV\SpaceInvaders_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
-Loading C:\Users\jjust\Desktop\GameDev\GitHub\PDV\SpaceInvaders_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
-Platform assembly: C:\Users\jjust\Desktop\GameDev\GitHub\PDV\SpaceInvaders_Data\Managed\System.dll (this message is harmless)
-- Completed reload, in  0.047 seconds
+Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\System.Core.dll (this message is harmless)
+Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
+Platform assembly: E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\System.dll (this message is harmless)
+- Completed reload, in  0.031 seconds
 <RI> Initializing input.
-XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 1.003277 ms
-Setting up 2 worker threads for Enlighten.
-  Thread -> id: 1808 -> priority: 1 
-  Thread -> id: 1f64 -> priority: 1 
+UnloadTime: 2.127642 ms
+Setting up 3 worker threads for Enlighten.
+  Thread -> id: 3a48 -> priority: 1 
+  Thread -> id: 437c -> priority: 1 
+  Thread -> id: 740 -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 2.462006 ms
+UnloadTime: 1.340016 ms
 
-Unloading 13 unused Assets to reduce memory usage. Loaded Objects now: 1843.
-Total: 0.860012 ms (FindLiveObjects: 0.138560 ms CreateObjectMapping: 0.061582 ms MarkObjects: 0.635922 ms  DeleteObjects: 0.023093 ms)
+Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1728.
+Total: 0.289279 ms (FindLiveObjects: 0.043235 ms CreateObjectMapping: 0.022471 ms MarkObjects: 0.213333 ms  DeleteObjects: 0.009955 ms)
 
 Colisión
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.859441 ms
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 383 unused Assets to reduce memory usage. Loaded Objects now: 387.
-Total: 17.227628 ms (FindLiveObjects: 0.112473 ms CreateObjectMapping: 0.111617 ms MarkObjects: 0.771916 ms  DeleteObjects: 16.229910 ms)
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+El boss ha muerto
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.894577 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 359.
+Total: 4.760458 ms (FindLiveObjects: 0.019342 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.123164 ms  DeleteObjects: 4.602591 ms)
 
 Se ha creado un jugador y se ha añadido al ranking
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.357941 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.373296 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 359.
-Total: 0.282251 ms (FindLiveObjects: 0.020955 ms CreateObjectMapping: 0.014540 ms MarkObjects: 0.233926 ms  DeleteObjects: 0.012401 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 335.
+Total: 0.158150 ms (FindLiveObjects: 0.014506 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.126293 ms  DeleteObjects: 0.008533 ms)
 
 Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.735137 ms
+UnloadTime: 0.983039 ms
 
-Unloading 3 unused Assets to reduce memory usage. Loaded Objects now: 1846.
-Total: 0.644475 ms (FindLiveObjects: 0.119315 ms CreateObjectMapping: 0.044476 ms MarkObjects: 0.466570 ms  DeleteObjects: 0.013684 ms)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.288426 ms (FindLiveObjects: 0.038399 ms CreateObjectMapping: 0.022755 ms MarkObjects: 0.221013 ms  DeleteObjects: 0.005404 ms)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 3.044899 ms
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 383 unused Assets to reduce memory usage. Loaded Objects now: 387.
-Total: 19.925699 ms (FindLiveObjects: 0.104347 ms CreateObjectMapping: 0.084675 ms MarkObjects: 0.949820 ms  DeleteObjects: 18.785145 ms)
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.236194 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 10.533253 ms (FindLiveObjects: 0.051768 ms CreateObjectMapping: 0.039253 ms MarkObjects: 0.367786 ms  DeleteObjects: 10.073306 ms)
 
 Se ha creado un jugador y se ha añadido al ranking
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.778758 ms
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.308906 ms
 
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 359.
-Total: 0.603847 ms (FindLiveObjects: 0.180897 ms CreateObjectMapping: 0.067569 ms MarkObjects: 0.335281 ms  DeleteObjects: 0.016250 ms)
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.189155 ms (FindLiveObjects: 0.018773 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.153030 ms  DeleteObjects: 0.008817 ms)
 
 Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.461866 ms
+UnloadTime: 0.249457 ms
 
-Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 609.
-Total: 0.646613 ms (FindLiveObjects: 0.051746 ms CreateObjectMapping: 0.030791 ms MarkObjects: 0.487953 ms  DeleteObjects: 0.075267 ms)
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 649.
+Total: 0.308053 ms (FindLiveObjects: 0.019626 ms CreateObjectMapping: 0.010808 ms MarkObjects: 0.240070 ms  DeleteObjects: 0.036977 ms)
 
 QUIT
  

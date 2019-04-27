@@ -1,13 +1,15 @@
 Z
 XE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\AudioManager.csT
 RE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\BossIA.csZ
+XE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\BossMovement.csY
+WE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\BossRespawn.csT
+RE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Bullet.csZ
 XE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\ColorChanger.csV
 TE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Database.csa
 _E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyBulletCollider.cs\
 ZE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyColliders.csU
 SE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyIA.cs[
-YE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyMovement.csX
-VE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\FinishGame.cs]
+YE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\EnemyMovement.cs]
 [E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\InputController.csa
 _E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Kids_PlayerMovement.csY
 WE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Leaderboard.csa
@@ -18,6 +20,5 @@ aE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\MenuHa
 UE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\PauseMenu.csT
 RE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Player.csb
 `E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\PlayerBulletCollider.csS
-QE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Score.csX
-VE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Screenshot.csY
-WE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\StartWindow.cs
+QE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Score.csT
+RE:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\Space Invaders\Assets\Scripts\Score2.cs
