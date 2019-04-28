@@ -135,6 +135,7 @@ public class Leaderboard : MonoBehaviour
 
 	public void quitGame()
 	{
+		Database.setTwoPlayers (false);
 		SceneManager.LoadScene ("start_window",LoadSceneMode.Single);
 	}
 }
