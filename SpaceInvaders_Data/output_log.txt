@@ -14,20 +14,666 @@ Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\Un
 Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
 Loading E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\UnityEngine.Timeline.dll into Unity Child Domain
 Platform assembly: E:\GameDev\Proyectos\PDV-SpaceInvaders\PDV\SpaceInvaders_Data\Managed\System.dll (this message is harmless)
-- Completed reload, in  0.031 seconds
+- Completed reload, in  0.032 seconds
 <RI> Initializing input.
 <RI> Input initialized.
 <RI> Initialized touch support.
-UnloadTime: 2.127642 ms
+UnloadTime: 1.787447 ms
 Setting up 3 worker threads for Enlighten.
-  Thread -> id: 3a48 -> priority: 1 
-  Thread -> id: 437c -> priority: 1 
-  Thread -> id: 740 -> priority: 1 
+  Thread -> id: 4058 -> priority: 1 
+  Thread -> id: 4c18 -> priority: 1 
+  Thread -> id: fdc -> priority: 1 
 Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.340016 ms
+UnloadTime: 1.407429 ms
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1728.
-Total: 0.289279 ms (FindLiveObjects: 0.043235 ms CreateObjectMapping: 0.022471 ms MarkObjects: 0.213333 ms  DeleteObjects: 0.009955 ms)
+Total: 0.335928 ms (FindLiveObjects: 0.059733 ms CreateObjectMapping: 0.025031 ms MarkObjects: 0.239217 ms  DeleteObjects: 0.011377 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+El boss ha muerto
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.616675 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 359.
+Total: 4.923160 ms (FindLiveObjects: 0.024462 ms CreateObjectMapping: 0.018488 ms MarkObjects: 0.144213 ms  DeleteObjects: 4.735711 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.419092 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 335.
+Total: 0.175786 ms (FindLiveObjects: 0.019911 ms CreateObjectMapping: 0.007679 ms MarkObjects: 0.137102 ms  DeleteObjects: 0.010524 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.592497 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.723910 ms (FindLiveObjects: 0.115768 ms CreateObjectMapping: 0.057457 ms MarkObjects: 0.535892 ms  DeleteObjects: 0.013937 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.586808 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 5.175462 ms (FindLiveObjects: 0.029582 ms CreateObjectMapping: 0.018488 ms MarkObjects: 0.189439 ms  DeleteObjects: 4.937382 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.320284 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.211342 ms (FindLiveObjects: 0.019057 ms CreateObjectMapping: 0.009102 ms MarkObjects: 0.171804 ms  DeleteObjects: 0.010808 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.758328 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.704852 ms (FindLiveObjects: 0.095573 ms CreateObjectMapping: 0.047502 ms MarkObjects: 0.547555 ms  DeleteObjects: 0.013937 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.665314 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 5.761132 ms (FindLiveObjects: 0.023039 ms CreateObjectMapping: 0.018488 ms MarkObjects: 0.194844 ms  DeleteObjects: 5.524190 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.257990 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.200533 ms (FindLiveObjects: 0.017351 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.165262 ms  DeleteObjects: 0.009671 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.308337 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.354417 ms (FindLiveObjects: 0.058026 ms CreateObjectMapping: 0.025031 ms MarkObjects: 0.263964 ms  DeleteObjects: 0.007111 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.708834 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 4.929986 ms (FindLiveObjects: 0.025031 ms CreateObjectMapping: 0.015359 ms MarkObjects: 0.182613 ms  DeleteObjects: 4.706413 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.321421 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.196550 ms (FindLiveObjects: 0.016497 ms CreateObjectMapping: 0.007679 ms MarkObjects: 0.161564 ms  DeleteObjects: 0.010524 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.277617 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.368355 ms (FindLiveObjects: 0.063146 ms CreateObjectMapping: 0.026453 ms MarkObjects: 0.270506 ms  DeleteObjects: 0.007679 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.841385 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 4.716938 ms (FindLiveObjects: 0.022471 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.171519 ms  DeleteObjects: 4.508440 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.259697 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.209635 ms (FindLiveObjects: 0.023324 ms CreateObjectMapping: 0.008817 ms MarkObjects: 0.166968 ms  DeleteObjects: 0.009955 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.287288 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.366079 ms (FindLiveObjects: 0.060302 ms CreateObjectMapping: 0.026737 ms MarkObjects: 0.271644 ms  DeleteObjects: 0.007111 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.924728 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 6.557007 ms (FindLiveObjects: 0.029582 ms CreateObjectMapping: 0.021617 ms MarkObjects: 0.241777 ms  DeleteObjects: 6.263461 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.266239 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.218453 ms (FindLiveObjects: 0.017351 ms CreateObjectMapping: 0.009102 ms MarkObjects: 0.182044 ms  DeleteObjects: 0.009671 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.289279 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.371484 ms (FindLiveObjects: 0.055751 ms CreateObjectMapping: 0.024746 ms MarkObjects: 0.282737 ms  DeleteObjects: 0.007679 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.875803 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 4.712102 ms (FindLiveObjects: 0.024177 ms CreateObjectMapping: 0.014506 ms MarkObjects: 0.173510 ms  DeleteObjects: 4.499053 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.270790 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.196550 ms (FindLiveObjects: 0.016213 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.162702 ms  DeleteObjects: 0.009386 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.975643 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 1.309296 ms (FindLiveObjects: 0.195413 ms CreateObjectMapping: 0.111502 ms MarkObjects: 0.972514 ms  DeleteObjects: 0.028728 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.436443 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 4.726609 ms (FindLiveObjects: 0.026168 ms CreateObjectMapping: 0.015075 ms MarkObjects: 0.180906 ms  DeleteObjects: 4.503605 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.282453 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.211342 ms (FindLiveObjects: 0.019342 ms CreateObjectMapping: 0.008533 ms MarkObjects: 0.172657 ms  DeleteObjects: 0.010239 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.332799 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.355555 ms (FindLiveObjects: 0.055182 ms CreateObjectMapping: 0.023608 ms MarkObjects: 0.269084 ms  DeleteObjects: 0.007111 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.036799 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 16.793870 ms (FindLiveObjects: 0.080782 ms CreateObjectMapping: 0.068551 ms MarkObjects: 0.695466 ms  DeleteObjects: 15.947933 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.305777 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.206222 ms (FindLiveObjects: 0.020479 ms CreateObjectMapping: 0.007679 ms MarkObjects: 0.167253 ms  DeleteObjects: 0.010524 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.288426 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.368924 ms (FindLiveObjects: 0.060017 ms CreateObjectMapping: 0.023608 ms MarkObjects: 0.278186 ms  DeleteObjects: 0.006826 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 4.373045 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 14.108147 ms (FindLiveObjects: 0.084195 ms CreateObjectMapping: 0.070826 ms MarkObjects: 0.654506 ms  DeleteObjects: 13.296913 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.261688 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.219306 ms (FindLiveObjects: 0.022755 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.177493 ms  DeleteObjects: 0.010524 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.329955 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.383146 ms (FindLiveObjects: 0.067697 ms CreateObjectMapping: 0.025599 ms MarkObjects: 0.281884 ms  DeleteObjects: 0.007679 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.347517 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 9.913449 ms (FindLiveObjects: 0.050062 ms CreateObjectMapping: 0.035839 ms MarkObjects: 0.378310 ms  DeleteObjects: 9.448383 ms)
+
+El jugador no se ha añadido al ranking
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.266524 ms
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
+Total: 0.198542 ms (FindLiveObjects: 0.016782 ms CreateObjectMapping: 0.007679 ms MarkObjects: 0.164124 ms  DeleteObjects: 0.009671 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.288426 ms
+
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.377457 ms (FindLiveObjects: 0.063999 ms CreateObjectMapping: 0.025031 ms MarkObjects: 0.280461 ms  DeleteObjects: 0.007679 ms)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Colisión
  
@@ -61,95 +707,79 @@ Colisión
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.894577 ms
-
-Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 359.
-Total: 4.760458 ms (FindLiveObjects: 0.019342 ms CreateObjectMapping: 0.014222 ms MarkObjects: 0.123164 ms  DeleteObjects: 4.602591 ms)
-
-Se ha creado un jugador y se ha añadido al ranking
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.373296 ms
-
-Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 335.
-Total: 0.158150 ms (FindLiveObjects: 0.014506 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.126293 ms  DeleteObjects: 0.008533 ms)
-
-Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.983039 ms
-
-Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
-Total: 0.288426 ms (FindLiveObjects: 0.038399 ms CreateObjectMapping: 0.022755 ms MarkObjects: 0.221013 ms  DeleteObjects: 0.005404 ms)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Colisión
- 
-(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
-
-Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 1.236194 ms
+UnloadTime: 1.281990 ms
 
 Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
-Total: 10.533253 ms (FindLiveObjects: 0.051768 ms CreateObjectMapping: 0.039253 ms MarkObjects: 0.367786 ms  DeleteObjects: 10.073306 ms)
+Total: 5.044333 ms (FindLiveObjects: 0.032995 ms CreateObjectMapping: 0.018204 ms MarkObjects: 0.203093 ms  DeleteObjects: 4.789755 ms)
 
-Se ha creado un jugador y se ha añadido al ranking
+El jugador no se ha añadido al ranking
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
 
 Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.308906 ms
+UnloadTime: 0.303217 ms
 
 Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 362.
-Total: 0.189155 ms (FindLiveObjects: 0.018773 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.153030 ms  DeleteObjects: 0.008817 ms)
+Total: 0.213617 ms (FindLiveObjects: 0.017635 ms CreateObjectMapping: 0.007964 ms MarkObjects: 0.176070 ms  DeleteObjects: 0.011093 ms)
 
-Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
-UnloadTime: 0.249457 ms
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.319999 ms
 
-Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 649.
-Total: 0.308053 ms (FindLiveObjects: 0.019626 ms CreateObjectMapping: 0.010808 ms MarkObjects: 0.240070 ms  DeleteObjects: 0.036977 ms)
+Unloading 2 unused Assets to reduce memory usage. Loaded Objects now: 1755.
+Total: 0.348159 ms (FindLiveObjects: 0.051484 ms CreateObjectMapping: 0.024746 ms MarkObjects: 0.264817 ms  DeleteObjects: 0.006542 ms)
 
-QUIT
+Colisión
  
 (Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Colisión
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/DebugBindings.gen.cpp Line: 51)
+
+Unloading 6 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.584704 ms
+
+Unloading 384 unused Assets to reduce memory usage. Loaded Objects now: 386.
+Total: 8.551530 ms (FindLiveObjects: 0.047502 ms CreateObjectMapping: 0.036408 ms MarkObjects: 0.399928 ms  DeleteObjects: 8.066837 ms)
 
